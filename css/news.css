@@ -91,6 +91,7 @@ aside button:hover{
     justify-content: space-between;
 }
 .more{
+    width: 50px;
     cursor: pointer;
     background: #454444;
     color: #e9d45d ;
@@ -102,6 +103,7 @@ aside button:hover{
     transition: all 1s;
 }
 .more2{
+    width: 50px;
     cursor: pointer;
     background: #454444;
     color: #e9d45d ;
@@ -113,6 +115,7 @@ aside button:hover{
     transition: all 1s;
 }
 .more3{
+    width: 50px;
     cursor: pointer;
     background: #454444;
     color: #e9d45d ;
@@ -124,6 +127,7 @@ aside button:hover{
     transition: all 1s;
 }
 .more4{
+    width: 50px;
     cursor: pointer;
     background: #454444;
     color: #e9d45d ;
@@ -276,8 +280,4 @@ aside button:hover{
     align-self: center;
     font-size: 24px;
     padding: 20px;
-}
-.last{
-    display: flex;
-    flex-direction: column;
 }

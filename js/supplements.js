@@ -189,7 +189,7 @@ shopcarbtn.forEach((li) => {
 // })
 
 // 購物車
-// let shopcar = document.querySelector('.shoppingcar')
+let shopcar = document.querySelector('.shoppingcar')
 let shopcatbtn = document.querySelector('.fa-shopping-cart')
 let toggleshopcar = false
 
