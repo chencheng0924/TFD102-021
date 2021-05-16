@@ -1,0 +1,268 @@
+
+/*        banner區域             */
+.banner{
+    width: 1200px;
+    height: 200px;
+    margin: 50px auto;
+    background-image: url(../img/newbanner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 13px 3px ;
+}
+.sup{
+    width: 300px;
+    height: 100px;
+    background:#e9d45d ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px 3px;
+    text-align: center;
+    line-height: 100px;
+}
+.sup a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #454444;
+}
+.gears{
+    width: 300px;
+    height: 100px;
+    background:#454444 ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px 3px;
+    text-align: center;
+    line-height: 100px;
+}
+.gears a{
+    font-size: 25px;
+    color: #e9d45d;
+    text-decoration: none;
+
+}
+
+/*       產品區域            */
+main{
+    width: 1200px;
+    height: 1700px;
+    margin: 0 auto;
+    margin: 100px auto;
+    background: #efedda;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 13px 3px ;
+    overflow: hidden;
+}
+.product1{
+    width: 1200px;
+    padding-top: 40px;
+    margin-top: 40px ;
+    display: flex;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+/* main:hover .product1{
+    transform: translateX(0%);
+} */
+
+.pro1{
+    width: 900px;
+    height: 250px;
+    background: #e9d45d;
+    border-radius: 0 30px 30px 0 ;
+    display: flex;
+
+}
+.pro10{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    padding: 0 0 0 40px;
+}
+.pro11{
+    padding: 30px 20px 10px 20px;
+    color: #454444;
+}
+.pro12{
+    padding: 10px 20px 30px 20px;
+    color: #454444;
+}
+
+.pro13{
+    align-self: flex-end;
+    padding: 0 30px;
+    color: #454444;
+}
+.pro13 a:hover{
+    background: #454444;
+    color: #e9d45d;
+}
+.pro13 a{
+    text-decoration: none;
+    border: 1px solid #454444;
+    padding: 10px;
+    border-radius: 10px;
+    color: #454444;
+}
+.pro1img{
+    align-self: center;
+}
+.pro1img img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.product2{
+    align-self: flex-end;
+    padding-top: 40px;
+    margin-top: 40px;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.pro2{
+    display: flex;
+    justify-content: flex-end;
+    height: 250px;
+    width: 900px;
+    background: #454444;
+    border-radius: 30px 0 0 30px ;
+}
+.pro2img img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+.pro2img{
+    align-self: center;
+}
+.pro20{
+    /* height: 200px; */
+    width: 700px;
+    margin-top: -10px;
+    padding:0 40px
+}
+.pro21{
+    padding: 30px 20px 10px 20px;
+    color: #e9d45d;
+}
+.pro22{
+    padding: 10px 20px 30px 20px;
+    color: #e9d45d;
+}
+.pro23 a:hover{
+    background: #e9d45d;
+    color: #454444;
+}
+.pro23{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.pro23 a{
+    text-decoration: none;
+    border: 1px solid #e9d45d;
+    padding: 10px;
+    border-radius: 10px;
+    color: #e9d45d;
+}
+.size{
+    margin-left: 20px;
+    width: 150px;
+}
+.size select{
+    background:#454444;
+    color: #e9d45d;
+}
+.size2{
+    margin-left: 20px;
+    width: 150px;
+    color: #e9d45d;
+}
+.size2 select{
+    background:#e9d45d;
+    color: #454444;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: red;
+    font-size: 24px;
+}
+
+/* 購物車 */
+.shopcarall{
+    background:#efedda;
+    color: #454444;
+    width: 330px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 10000;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.productimg img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.total{
+    background: #454444;
+    color: #e9d45d;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+}
+.totalcheck p{
+    margin:10px 0;
+}
+.totalcheck{
+    font-size: 18px;
+    align-self: center;
+    cursor: pointer;
+}
+.totalcheck a{
+    text-decoration: none;
+    color: #e9d45d; 
+}
+.shopcarp{
+    display: flex;
+    padding: 0 15px;
+}
+.productprice{
+    display: flex;
+}
+.shopcarp h2{
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.productprice p{
+    margin:0 5px;
+}
+.total p{
+    margin:10px 0;
+}
+.productprice i{
+    margin-left: 70px;
+}
+.productprice i:hover{
+    cursor: pointer;
+}
+.totalprice{
+    font-size: 20px;
+}
+.shopcarp img{
+    width: 100px;
+    height: 100px;
+}
+.size123{
+    padding-bottom: 15px;
+}

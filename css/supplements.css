@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+}
+
+/* 購物車 */
+.shoppingcar{
+    width: 330px;
+    background:#efedda;
+    position: fixed;
+    top: 50px ;
+    right: 0;
+    display: none;
+    z-index: 200;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes move{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.shoppingcar img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+}
+.cartxt{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.cartxt h4{
+    padding-bottom: 5px;
+}
+.cartxt p{
+    padding-bottom: 5px;
+}
+.cartrash{
+    align-self: flex-end;
+}
+.check{
+    height: 35px;
+    width: 330px;
+    color: #efedda;
+    background: #454444;
+    text-align: center;
+    padding: 5px;
+    justify-self: flex-end;
+}
+.check a{
+    text-decoration: none;
+    color: #e9d45d;
+    display: inline-block;
+    width: 330px;
+    height: 35px;
+}
+/*        banner區域             */
+.banner{
+    width: 1200px;
+    height: 200px;
+    margin: 50px auto;
+    background-image: url(../img/newbanner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 13px 3px ;
+}
+.sup{
+    width: 300px;
+    height: 100px;
+    background:#e9d45d ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px 3px;
+    text-align: center;
+    line-height: 100px;
+}
+.sup a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #454444;
+}
+.gears{
+    width: 300px;
+    height: 100px;
+    background:#454444 ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px 3px;
+    text-align: center;
+    line-height: 100px;
+}
+.gears a{
+    font-size: 25px;
+    color: #e9d45d;
+    text-decoration: none;
+
+}
+/*            main           */
+
+
+main{
+    width: 1200px;
+    height: 1500px;
+    margin:50px auto;
+    background: #efedda;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px 3px;
+    display: flex;
+
+}
+aside{
+    width: 300px;
+    /* text-align: left; */
+    padding-top: 30px;
+    padding-left: 40px;
+    
+}
+aside li{
+    /* text-align: left; */
+    width: 300px;
+    padding: 10px 10px;
+}
+aside li a{
+    text-decoration: none;
+    color: #454444;
+}
+aside li i{
+    color: #454444;
+    padding: 0 10px;
+}
+.aside1{
+    padding-top: 10px;
+    display: none;
+    transition: all 1s;
+}
+.aside2{
+    padding-top: 10px;
+    display: none;
+    transition: all 1s;
+
+}
+.aside3{
+    padding-top: 10px;
+    display: none;
+    transition: all 1s;
+
+}
+.abs{
+    animation-name: gogo;
+    animation-duration: 1s;
+}
+@keyframes gogo{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+
+/*      產品        */
+.product{
+    width: 900px;
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product h4{
+    display: none;
+}
+.product1{
+    width:250px ;
+    height: 350px;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+}
+.product1 h2{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.product1 p{
+    color:red;
+    font-weight: 600;
+}
+.product1 a i{
+    position: absolute;
+    bottom: 100px;
+    right: 5px;
+    font-size: 20px;
+    border: 2px solid #454444;
+    padding: 5px;
+    border-radius: 50%;
+    color:#454444;
+}
+.product1 a i:hover{
+    background-color: #e9d45d;
+}
+
+/* 圖片檔 */
+.product1 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg1{
+    background-image: url("../img/supplement/on.jpg");
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg1:hover{
+    background-image: url(../img/supplement/onback.jpg);
+    background-size: cover;
+    background-position: center -60px;
+}
+.product2 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg2{
+    background-image: url(../img/supplement/tryall.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg2:hover{
+    background-image: url(../img/supplement/tryallback.PNG);
+    background-size: cover;
+    background-position: center -35px;
+}
+.product3 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg3{
+    background-image: url(../img/supplement/allin.jpeg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg3:hover{
+    background-image: url(../img/supplement/allinback.jpeg);
+    background-size: cover;
+    background-position: center 0px;
+}
+.product4 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg4{
+    background-image: url(../img/supplement/mars.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg4:hover{
+    background-image: url(../img/supplement/marsback.PNG);
+    background-size: cover;
+    background-position: center 0px;
+}
+.product5 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg5{
+    background-image: url(../img/supplement/myprotein.webp);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg5:hover{
+    background-image: url(../img/supplement/myproteinback.PNG);
+    background-size: contain;
+    background-position: center 0px;
+}
+.product6 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg6{
+    background-image: url(../img/supplement/tryall2.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg6:hover{
+    background-image: url(../img/supplement/tryall2back.PNG);
+    background-size: cover;
+    background-position: center 0px;
+}
+.product7 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg7{
+    background-image: url(../img/supplement/creatine.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg7:hover{
+    background-image: url(../img/supplement/./creatineback.PNG);
+    background-size: cover;
+    background-position: center 0px;
+}
+.product8 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg8{
+    background-image: url(../img/supplement/bcaa.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg8:hover{
+    background-image: url(../img/supplement/bcaaback.PNG);
+    background-size: cover;
+    background-position: center 0px;
+}
+.product9 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg9{
+    background-image: url(../img/supplement/v.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg9:hover{
+    background-image: url(../img/supplement/vback.PNG);
+    background-size: contain;
+    background-position: center 0px;
+}
+.product10 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg10{
+    background-image: url(../img/supplement/pbar1.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg10:hover{
+    background-image: url(../img/supplement/pbar1back.PNG);
+    background-size: contain;
+    background-position: center 0px;
+}
+.product11 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg11{
+    background-image: url(../img/supplement/pbar2.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg11:hover{
+    background-image: url(../img/supplement/./pbar2back.PNG);
+    background-size: contain;
+    background-position: center 0px;
+}
+.product12 img{
+    width: 250px;
+    height: 250px;
+}
+.productimg12{
+    background-image: url(../img/supplement/pcp.jpg);
+    width: 250px;
+    height: 250px;
+    background-size:cover ;
+}
+.productimg12:hover{
+    background-image: url(../img/supplement/pcpback.PNG);
+    background-size: contain;
+    background-position: center 0px;
+}
+
+.supercar{
+    display: flex;
+    padding: 0 15px;
+}
+.supercar img{
+    width: 100px;
+    height: 100px;
+}
+.supercar h2{
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.superprice{
+    display: flex ;
+}
+.superprice p{
+    margin:0 5px;
+}
+.superprice i{
+    margin-left: 50px;
+}
+.superprice i:hover{
+    cursor: pointer;
+}
+.supercheck{
+    background: #454444;
+    color: #e9d45d;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.supercheck p{
+    margin:10px 0;
+}
+.supcheck1{
+    font-size: 20px;
+}
+.supcheck2{
+    text-align: center;
+
+}
+.supcheck2 a{
+    font-size: 18px;
+    align-self: center;
+    cursor: pointer;
+    background: #454444;
+    color: #e9d45d;
+    text-decoration: none;
+}

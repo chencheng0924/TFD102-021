@@ -1,0 +1,109 @@
+
+/*         banner            */
+.banner{
+    width: 1200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: black;
+    background-image: url(../img/./newbanner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 13px 3px ;
+    border-radius: 10px;
+}
+.banner h2{
+    padding: 30px 80px;
+    border-radius: 10px;
+    color: #e9d45d;
+    font-size: 36px;
+}
+/*             main                  */
+.trainerall{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.trainer1{
+    width: 350px;
+    background: #efedda;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 13px 3px ;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+.trainer1:hover .more{
+    opacity: 1;
+    transition: all 1s;
+}
+.trainer1img img{
+    width: 350px;
+    height: 350px;
+}
+.trainertxt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.trainer1txt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+}
+.trainer1txt li a{
+    text-decoration: none;
+    background: #454444;
+    color: #e9d45d;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.trainer1txt li a:hover{
+    background: #efedda;
+    color: #454444;
+}
+/* .trainer1txt ul:nth-child(5){
+    align-self: flex-end;
+} */
+.trainer1txt li{
+    padding: 15px 15px;
+}
+.trainer1txt li:nth-child(5){
+    text-align: right;
+}
+.trainer1txt::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 175px solid #efedda;
+    border-left: 175px solid #efedda;
+    position: absolute;
+    top: 305px;
+    left: 0;
+    transform: translateY(-10px);
+}
+.trainer1:hover{
+    transform: translateY(-10px);
+}
+.trainer1:hover .trainer1txt{
+    background: #e9d45d;
+}
+.trainer1:hover .trainer1txt::before{
+    border-right: 175px solid #e9d45d;
+    border-left: 175px solid #e9d45d;
+}
+.more{
+    opacity: 0;
+    margin-top: 5px;
+}

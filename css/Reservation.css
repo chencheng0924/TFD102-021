@@ -1,0 +1,153 @@
+body{
+    background:#efedda;
+}
+header{
+    width:100%;
+    background: #454444;
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+}
+.icon i{
+    margin:5px 20px;
+    color: #454444;
+}
+.title{
+   width: 300px;
+   height: 350px;
+   margin: 0 auto;
+}
+.title img{
+    display: inline-block;
+    width: 300px;
+    height: 280px;
+}
+.title h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #e9d45d;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+.txttitle{
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e9d45d;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.txttitle a{
+    text-decoration: none;
+    color: #454444;
+}
+.txttitleh41{
+    margin-left: 10px;
+}
+.txttitleh41::before{
+    content: "<";
+    padding-right: 5px;
+}
+.txttitleh42{
+    margin-right: 10px;
+}
+.txttitleh42::after{
+    content: ">";
+    padding-left: 5px;
+}
+.txt{
+    background: white;
+    width: 1200px;
+    height: 530px;
+    /* margin-bottom: 100px; */
+    display: flex;
+    /* overflow: hidden; */
+    transition: all 1s;
+}
+.txt1{
+    width: 240px;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 0 3px;
+}
+.txt1-date{
+    /* border: 1px solid black; */
+    text-align: center;
+    background: #454444;
+    color: #efedda;
+    padding: 10px 0;
+    margin: 5px 0;
+    width: 235px;
+}
+.txt1-class1{
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.full{
+    width: 200px;
+    margin: 5px auto;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.resk{
+    width: 200px;
+    margin: 5px auto;
+    background: rgb(38, 172, 224);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.resal{
+    width: 200px;
+    margin: 5px auto;
+    background: palevioletred;
+    padding: 5px;
+    border-radius: 10px;
+}
+.resal a{
+    text-decoration: none;
+    color: white;
+}
+.classname{
+    font-size: 20px;
+}
+.teachername{
+    font-size: 20px;
+}
+.txt1-class2{
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* height: 220px; */
+}
+.res{
+    width: 200px;
+    margin: 5px auto;
+    background: red;
+    padding: 5px;
+    border-radius: 10px;
+}
+.res a{
+    text-decoration: none;
+    color: white;
+}
+.txtall{
+    display: flex;
+    margin-bottom: 100px;
+}
+.all{
+    overflow: hidden;
+}

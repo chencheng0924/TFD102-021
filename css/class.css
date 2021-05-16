@@ -1,0 +1,170 @@
+
+/* 中間內容 */
+.banner{
+    width: 1200px;
+    height: 200px;
+    margin:0 auto;
+    /* background: #efedda; */
+}
+.banner h2{
+    font-size: 60px;
+    font-weight: 700;
+    padding: 60px 1100px 20px 100px;
+    color: #efedda;
+    text-shadow:black .2em .2em .2em ;
+}
+.banner1{
+    width: 1000px;
+    height: 10px;
+    margin: 0 auto;
+    background:#efedda ;
+    box-shadow: 2px 2px 13px 3px ;
+}
+main{
+    width: 1200px;
+    margin: 20px auto 50px auto;
+    background:#efedda ;
+    box-shadow: 2px 2px 13px 3px ;
+    padding: 80px 0 30px 0;
+}
+
+.item1{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+}
+.item1 img{
+    display:block;
+    width: 300px;
+    height:300px;
+}
+.item1 .strlist-txt{
+    height: 300px;
+    padding-left: 35px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item1 .strlist-txt p{
+    line-height: 2;
+}
+.item1 .strlist-txt .btn{
+    align-self: flex-end;
+    text-decoration: none;
+    border:1px solid gray;
+    background: white;
+    padding: 10px;
+    color: #454444;
+    border-radius: 10px ;
+}
+.item1 .strlist-txt .btn:hover{
+    background:#e9d45d ;
+    color: white;
+}
+
+.item1::after{
+    content: "";
+    position: absolute;
+    bottom:10px;
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background: rgb(124, 123, 123);
+    transition: width 1s;
+}
+.item1:hover::after{
+    width: 100%;
+}
+
+
+.item2{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+}
+.item2 img{
+    display:block;
+    width: 300px;
+    height:300px;
+}
+.item2 .yogalist-txt{
+    height: 300px;
+    padding-right: 35px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item2 .yogalist-txt p{
+    line-height: 2;
+}
+.item2 .yogalist-txt .btn{
+    align-self: flex-end;
+    text-decoration: none;
+    border:1px solid gray;
+    background: white;
+    padding: 10px;
+    color: #454444;
+    border-radius: 10px ;
+}
+.item2 .yogalist-txt .btn:hover{
+    background:#e9d45d ;
+    color: white;
+}
+.item2::after{
+    content: "";
+    position: absolute;
+    bottom:10px;
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background: rgb(124, 123, 123);
+    transition: width 1s;
+}
+.item2:hover::after{
+    width: 100%;
+}
+.item3{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+}
+.item3 img{
+    display:block;
+    width: 300px;
+    height:300px;
+}
+.item3 .relaxlist-txt{
+    height: 300px;
+    padding-left: 35px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item3 .relaxlist-txt p{
+    line-height: 2;
+}
+.item3 .relaxlist-txt .btn{
+    align-self: flex-end;
+    text-decoration: none;
+    border:1px solid gray;
+    background: white;
+    padding: 10px;
+    color: #454444;
+    border-radius: 10px ;
+}
+.item3 .relaxlist-txt .btn:hover{
+    background:#e9d45d ;
+    color: white;
+}
+

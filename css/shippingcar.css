@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 1200px;
+    height: 1250px;
+    background-color: #F2EDE5;
+    margin: 50px auto;
+}
+.title h2{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.items{
+    width:1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    background: #454444;
+    color: #e9d45d;
+    margin-top: 20px;
+}
+.item{
+    width: 150px;
+    border: 1px solid #e9d45d;
+    border-left: 0px;
+    padding: 20px 0;
+}
+.item-1{
+    width: 400px;
+    border: 1px solid #e9d45d;
+    padding: 20px 0;
+}
+.products{
+    width:1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    color: #454444;
+}
+.product{
+    width: 150px;
+    height: 200px;
+    border-left: 0px;
+    padding: 20px 0;
+    line-height: 10;
+    background: white;
+}
+.product-1{
+    width: 400px;
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    background: white;
+
+}
+.product-1 img{
+    width: 150px;
+}
+.recommend{
+    width: 800px;
+    margin:50px 0 0 200px;
+    background: white;
+    padding: 25px;
+}
+.recommendtitle{
+    margin-bottom: 20px;
+}
+.recommendproduct{
+    display: flex;
+}
+.recommendproduct1{
+    display: flex;
+    margin:0 30px;
+}
+.recommendproduct1txt{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}
+.recommendproduct img{
+    width: 150px;
+    height: 150px;
+}
+.recommendproduct2{
+    display: flex;
+    margin:0 30px;
+}
+.recommendproduct2txt{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}
+.recommend button{
+    cursor: pointer;
+    background: #454444;
+    color: #e9d45d;
+    padding: 5px;
+}
+.check{
+    width: 1000px;
+    height: 450px;
+    margin: 50px auto;
+    background: white;
+    display: flex;
+    flex-wrap:wrap ;
+}
+.checkselect{
+    width: 650px;
+    padding: 0 20px;
+}
+.checkselect select{
+    width: 95%;
+    height: 30px;
+}
+.checkselect h4{
+    margin-top: 30px;
+}
+.checktitle{
+    display: flex;
+}
+.checkselecttitle{
+    width: 620px;
+    background: #454444;
+    color: #e9d45d;
+    padding: 20px;
+    margin-right: 30px;
+
+}
+.checkconfirmtitle{
+    width: 350px;
+    background: #454444;
+    color: #e9d45d;
+    padding: 20px;
+
+}
+.checkconfirm{
+    width: 350px;
+    padding: 20px;   
+    display: flex;
+    flex-direction: column;
+}
+
+.checkprice{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.checkshipping{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bonus input{
+    margin: 10px 0;
+    width: 200px;
+    height: 30px;
+}
+.bonus button{
+    padding:3px;
+    width: 60px;
+    background: #454444;
+    color: #e9d45d;
+}
+.checklastbtn{
+    width: 100%;
+    height: 30px;
+    background: green;
+    color: white;
+    align-items: flex-end;
+}
+.checklastbtn:hover{
+    cursor: pointer;
+}
+.checklast{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    background: #e9d45d;
+    margin-top: 30px;
+}

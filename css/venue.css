@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+.banner{
+    width: 1200px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/news\ banner.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.banner h2{
+    width: 100%;
+    border-radius: 10px;
+    color: #e9d45d;
+    font-size: 48px;
+    margin: 100px 0;
+}
+main{
+    width: 1200px;
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.gymimg{
+    clip-path: inset(0 0 0 0);
+    width: 600px;
+    transition: all 1s;
+}
+.gymimgg:hover .gymimg{
+    clip-path: inset(0 0 0 100%);
+    
+}
+.gymimg img{
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+}
+.txt{
+    width: 600px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+}
+.txt h3{
+    font-size: 24px;
+    color: #e9d45d;
+}
+.txt p{
+    font-size: 16px;
+    color: #efedda;
+    line-height: 3;
+    letter-spacing:3px;
+}
+.p{
+    font-size: 16px;
+    color: #efedda;
+    letter-spacing:3px;
+}
+.gymimg2 img{
+    display: inline-block;
+    width: 600px;
+    height:500px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    z-index: -1;
+  
+}
