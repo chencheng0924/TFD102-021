@@ -154,42 +154,6 @@ shopcarbtn.forEach((li) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // shopcarbtn.forEach((li) => {
 //     li.addEventListener('click', function (e) {
 //         e.preventDefault()
@@ -241,18 +205,6 @@ function shopcargo() {
     }
 }
 shopcatbtn.addEventListener('click', shopcargo)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // 側邊選單
