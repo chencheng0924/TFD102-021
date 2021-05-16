@@ -277,3 +277,7 @@ aside button:hover{
     font-size: 24px;
     padding: 20px;
 }
+.last{
+    display: flex;
+    flex-direction: column;
+}
