@@ -1,50 +1,50 @@
 // 創建一個購物車陣列
 let allproduct = [{
-    Image: '../img/supplement/on.jpg',
+    Image: './img/supplement/on.jpg',
     h2: 'ON金牌乳清蛋白(雙倍巧克力)',
     price: 1880
 }, {
-    Image: '../img/supplement/tryall.jpg',
+    Image: './img/supplement/tryall.jpg',
     h2: 'Tryall 全分離乳清蛋白 (35g/包) 綠豆沙牛奶',
     price: 1980
 }, {
-    Image: '../img/supplement/allin.jpeg',
+    Image: './img/supplement/allin.jpeg',
     h2: 'allin乳清-100%分離式乳清',
     price: 1380
 }, {
-    Image: '../img/supplement/mars.jpg',
+    Image: './img/supplement/mars.jpg',
     h2: '戰神低脂乳清蛋白',
     price: 2280
 }, {
-    Image: '../img/supplement/myprotein.webp',
+    Image: './img/supplement/myprotein.webp',
     h2: 'Myprotein 濃縮乳清蛋白',
     price: 1580
 }, {
-    Image: '../img/supplement/tryall2.jpg',
+    Image: './img/supplement/tryall2.jpg',
     h2: 'Tryall 濃縮乳清蛋白(500g/袋) 經典奶茶',
     price: 350
 }, {
-    Image: '../img/supplement/creatine.jpg',
+    Image: './img/supplement/creatine.jpg',
     h2: 'ON 肌酸 (1200g/罐)',
     price: 1100
 }, {
-    Image: '../img/supplement/bcaa.jpg',
+    Image: './img/supplement/bcaa.jpg',
     h2: '黃金 BCAA 支鏈胺基酸粉',
     price: 1280
 }, {
-    Image: '../img/supplement/v.jpg',
+    Image: './img/supplement/v.jpg',
     h2: 'Myprotein綜合維他命',
     price: 880
 }, {
-    Image: '../img/supplement/pbar1.jpg',
+    Image: './img/supplement/pbar1.jpg',
     h2: 'Myprotein巧克力棉花糖高蛋白棒',
     price: 1380
 }, {
-    Image: '../img/supplement/pbar2.jpg',
+    Image: './img/supplement/pbar2.jpg',
     h2: 'Myprotein高蛋白方塊燕麥棒',
     price: 1580
 }, {
-    Image: '../img/supplement/pcp.jpg',
+    Image: './img/supplement/pcp.jpg',
     h2: 'Myprotein高蛋白美式煎餅粉',
     price: 980
 }
