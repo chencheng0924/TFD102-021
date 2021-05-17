@@ -33,6 +33,8 @@ header{
 .all{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
 }
 .txttitle{
     width: 1200px;
@@ -147,7 +149,4 @@ header{
 .txtall{
     display: flex;
     margin-bottom: 100px;
-}
-.all{
-    overflow: hidden;
 }
