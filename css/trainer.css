@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 13px 3px ;
+    box-shadow: 1px 1px 3px gray ;
     border-radius: 10px;
 }
 .banner h2{
@@ -34,7 +34,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 2px 2px 13px 3px ;
+    box-shadow: 1px 1px 3px white ;
     transform: translateY(0px);
     transition: all .5s;
 }
