@@ -88,7 +88,6 @@ aside button:hover{
 .last{
     padding-top: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 .more{
