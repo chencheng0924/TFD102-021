@@ -3,7 +3,8 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: calibri;
+    font-family: Microsoft JhengHei;
+    font-family: Arial, sans-serif;
 }
 body{
     background:linear-gradient(90deg,#454444 50%,#e9d45d 50%);
