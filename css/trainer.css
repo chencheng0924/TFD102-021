@@ -34,7 +34,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 1px 1px 3px white ;
+    box-shadow: 1px 1px 3px black ;
     transform: translateY(0px);
     transition: all .5s;
 }
