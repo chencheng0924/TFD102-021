@@ -1,34 +1,37 @@
-
 /* 中間內容 */
-.banner{
+
+.banner {
     width: 1200px;
     height: 200px;
-    margin:0 auto;
+    margin: 0 auto;
     /* background: #efedda; */
 }
-.banner h2{
+
+.banner h2 {
     font-size: 60px;
     font-weight: 700;
     padding: 60px 1100px 20px 100px;
     color: #efedda;
-    text-shadow:black .2em .2em .2em ;
+    text-shadow: black .2em .2em .2em;
 }
-.banner1{
+
+.banner1 {
     width: 1000px;
     height: 10px;
     margin: 0 auto;
-    background:#efedda ;
-    box-shadow: 1px 1px 3px white ;
+    background: #efedda;
+    box-shadow: 1px 1px 3px white;
 }
-main{
+
+main {
     width: 1200px;
     margin: 20px auto 50px auto;
-    background:#efedda ;
-    box-shadow: 1px 1px 3px white ;
+    background: #efedda;
+    box-shadow: 1px 1px 3px white;
     padding: 80px 0 30px 0;
 }
 
-.item1{
+.item1 {
     width: 1000px;
     height: 400px;
     margin: 0 auto;
@@ -36,12 +39,14 @@ main{
     padding-top: 20px;
     position: relative;
 }
-.item1 img{
-    display:block;
+
+.item1 img {
+    display: block;
     width: 300px;
-    height:300px;
+    height: 300px;
 }
-.item1 .strlist-txt{
+
+.item1 .strlist-txt {
     height: 300px;
     padding-left: 35px;
     padding-top: 20px;
@@ -49,39 +54,42 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.item1 .strlist-txt p{
+
+.item1 .strlist-txt p {
     line-height: 2;
 }
-.item1 .strlist-txt .btn{
+
+.item1 .strlist-txt .btn {
     align-self: flex-end;
     text-decoration: none;
-    border:1px solid gray;
+    border: 1px solid gray;
     background: white;
     padding: 10px;
     color: #454444;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
-.item1 .strlist-txt .btn:hover{
-    background:#e9d45d ;
+
+.item1 .strlist-txt .btn:hover {
+    background: #e9d45d;
     color: white;
 }
 
-.item1::after{
+.item1::after {
     content: "";
     position: absolute;
-    bottom:10px;
+    bottom: 10px;
     display: inline-block;
     width: 0%;
     height: 2px;
     background: rgb(124, 123, 123);
     transition: width 1s;
 }
-.item1:hover::after{
+
+.item1:hover::after {
     width: 100%;
 }
 
-
-.item2{
+.item2 {
     width: 1000px;
     height: 400px;
     margin: 0 auto;
@@ -89,12 +97,14 @@ main{
     padding-top: 20px;
     position: relative;
 }
-.item2 img{
-    display:block;
+
+.item2 img {
+    display: block;
     width: 300px;
-    height:300px;
+    height: 300px;
 }
-.item2 .yogalist-txt{
+
+.item2 .yogalist-txt {
     height: 300px;
     padding-right: 35px;
     padding-top: 20px;
@@ -102,48 +112,56 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.item2 .yogalist-txt p{
+
+.item2 .yogalist-txt p {
     line-height: 2;
 }
-.item2 .yogalist-txt .btn{
+
+.item2 .yogalist-txt .btn {
     align-self: flex-end;
     text-decoration: none;
-    border:1px solid gray;
+    border: 1px solid gray;
     background: white;
     padding: 10px;
     color: #454444;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
-.item2 .yogalist-txt .btn:hover{
-    background:#e9d45d ;
+
+.item2 .yogalist-txt .btn:hover {
+    background: #e9d45d;
     color: white;
 }
-.item2::after{
+
+.item2::after {
     content: "";
     position: absolute;
-    bottom:10px;
+    bottom: 10px;
     display: inline-block;
     width: 0%;
     height: 2px;
     background: rgb(124, 123, 123);
     transition: width 1s;
 }
-.item2:hover::after{
+
+.item2:hover::after {
     width: 100%;
 }
-.item3{
+
+.item3 {
     width: 1000px;
     height: 400px;
     margin: 0 auto;
     display: flex;
     padding-top: 20px;
 }
-.item3 img{
-    display:block;
+
+.item3 img {
+    display: block;
     width: 300px;
-    height:300px;
+    height: 300px;
 }
-.item3 .relaxlist-txt{
+
+.item3 .relaxlist-txt {
     height: 300px;
     padding-left: 35px;
     padding-top: 20px;
@@ -151,20 +169,453 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.item3 .relaxlist-txt p{
+
+.item3 .relaxlist-txt p {
     line-height: 2;
 }
-.item3 .relaxlist-txt .btn{
+
+.item3 .relaxlist-txt .btn {
     align-self: flex-end;
     text-decoration: none;
-    border:1px solid gray;
+    border: 1px solid gray;
     background: white;
     padding: 10px;
     color: #454444;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
-.item3 .relaxlist-txt .btn:hover{
-    background:#e9d45d ;
+
+.item3 .relaxlist-txt .btn:hover {
+    background: #e9d45d;
     color: white;
 }
 
+.nav .fa-bars {
+    display: none;
+}
+
+@media screen and (max-width:575px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 16px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    .banner {
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner123 {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .banner h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .banner1 {
+        margin: 0;
+        width: 400px;
+    }
+    main {
+        width: 100%;
+        padding-top: 0;
+    }
+    .strlist img {
+        width: 200px;
+        height: 200px;
+    }
+    .relaxlist-txt {
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 0;
+    }
+    .strlist-txt h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .strlist-txt p {
+        font-size: 8px;
+    }
+    .yogalist-txt h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .yogalist-txt p {
+        font-size: 8px;
+    }
+    .relaxlist-txt h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .relaxlist-txt p {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 6px;
+    }
+    .yogalist img {
+        width: 200px;
+        height: 200px;
+    }
+    .relaxlist img {
+        width: 200px;
+        height: 200px;
+    }
+    .item1 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item2 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item3 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .foter {
+        margin: 0 auto;
+        width: 360px;
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    .banner {
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner123 {
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .banner h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .banner1 {
+        margin: 0;
+        width: 550px;
+    }
+    main {
+        width: 100%;
+        padding-top: 0;
+    }
+    .strlist img {
+        width: 200px;
+        height: 200px;
+    }
+    .relaxlist-txt {
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 0;
+    }
+    .strlist-txt h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .strlist-txt p {
+        font-size: 12px;
+    }
+    .yogalist-txt h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .yogalist-txt p {
+        font-size: 12px;
+    }
+    .relaxlist-txt h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .relaxlist-txt p {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .yogalist img {
+        width: 200px;
+        height: 200px;
+    }
+    .relaxlist img {
+        width: 200px;
+        height: 200px;
+    }
+    .item1 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item2 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item3 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .navlist11 li a {
+        font-size: 12px;
+    }
+    .navlist22 li a {
+        font-size: 12px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 20px;
+        color: #e9d45d;
+    }
+    .banner {
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner123 {
+        width: 750px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .banner h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .banner1 {
+        margin: 0;
+        width: 750px;
+    }
+    main {
+        width: 100%;
+        padding-top: 0;
+    }
+    .strlist img {
+        width: 250px;
+        height: 250px;
+    }
+    .relaxlist-txt {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .strlist-txt h2 {
+        font-size: 20px;
+    }
+    .strlist-txt p {
+        font-size: 14px;
+    }
+    .yogalist-txt h2 {
+        font-size: 20px;
+    }
+    .yogalist-txt p {
+        font-size: 14px;
+    }
+    .relaxlist-txt h2 {
+        font-size: 20px;
+    }
+    .relaxlist-txt p {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .yogalist img {
+        width: 250px;
+        height: 250px;
+    }
+    .relaxlist img {
+        width: 250px;
+        height: 250px;
+    }
+    .item1 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item2 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .item3 {
+        max-width: 100%;
+        align-items: center;
+    }
+    .foter h4 a {
+        font-size: 18px;
+    }
+    .foter ul li a {
+        font-size: 14px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        max-width: 100%;
+        height: 100px;
+    }
+    .banner123 {
+        width: 900px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .banner h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 900px;
+    }
+    .banner1 {
+        margin: 0;
+        width: 900px;
+    }
+    main {
+        max-width: 100%;
+    }
+    .strlist-txt {
+        width: 100%;
+    }
+    .item1 {
+        max-width: 100%;
+    }
+    .strlist-txt {
+        font-size: 14px;
+    }
+    .item2 {
+        max-width: 100%;
+    }
+    .yogalist-txt {
+        font-size: 14px;
+    }
+    .item3 {
+        max-width: 100%;
+    }
+    .relaxlist-txt {
+        font-size: 14px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
+}

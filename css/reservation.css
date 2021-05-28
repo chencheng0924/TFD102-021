@@ -1,45 +1,71 @@
-body{
-    background:#efedda;
+body {
+    background: #efedda;
 }
-header{
-    width:100%;
+
+header {
+    width: 100%;
     background: #454444;
 }
-.icon{
+
+.iconclass {
+    margin: 20px;
+}
+
+.iconclass h4 {
+    font-size: 16px;
+}
+
+.iconclass h4 a {
+    font-size: 16px;
+    color: #454444;
+    text-decoration: none;
+}
+
+.icon {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 36px;
 }
-.icon i{
-    margin:5px 20px;
+
+.icon i {
+    margin: 10px 20px;
     color: #454444;
 }
-.title{
-   width: 300px;
-   height: 390px;
-   margin: 0 auto;
+
+.title {
+    width: 300px;
+    height: 390px;
+    margin: 0 auto;
 }
-.title img{
+
+.title img {
     display: inline-block;
     width: 300px;
     height: 280px;
 }
-.title h2{
+
+.title h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     color: #e9d45d;
 }
-.tall{
-    width: 1200px;
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tall {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     overflow: hidden;
     flex-direction: column;
 }
 
-.txttitle{
-    width: 1200px;
+.txttitle {
+    width: 100%;
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -48,40 +74,48 @@ header{
     margin: 0px auto;
     margin-top: 100px;
 }
-.txttitle a{
+
+.txttitle a {
     text-decoration: none;
     color: #454444;
 }
-.txttitleh41{
+
+.txttitleh41 {
     margin-left: 10px;
 }
-.txttitleh41::before{
+
+.txttitleh41::before {
     content: "<";
     padding-right: 5px;
 }
-.txttitleh42{
+
+.txttitleh42 {
     margin-right: 10px;
 }
-.txttitleh42::after{
+
+.txttitleh42::after {
     content: ">";
     padding-left: 5px;
 }
-.txt{
+
+.txt {
     background: white;
-    width: 1200px;
-    height: 530px;
+    max-width: 100%;
+    max-height: 100%;
     /* margin-bottom: 100px; */
     display: flex;
     /* overflow: hidden; */
     transition: all 1s;
 }
-.txt1{
-    width: 240px;
+
+.txt1 {
+    width: 100%;
     height: 100%;
     /* border: 1px solid black; */
     padding: 0 3px;
 }
-.txt1-date{
+
+.txt1-date {
     /* border: 1px solid black; */
     text-align: center;
     background: #454444;
@@ -90,13 +124,15 @@ header{
     margin: 5px 0;
     width: 235px;
 }
-.txt1-class1{
+
+.txt1-class1 {
     text-align: center;
     line-height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
 }
-.full{
+
+.full {
     width: 200px;
     margin: 5px auto;
     background: black;
@@ -104,7 +140,8 @@ header{
     padding: 5px;
     border-radius: 10px;
 }
-.resk{
+
+.resk {
     width: 200px;
     margin: 5px auto;
     background: rgb(38, 172, 224);
@@ -112,24 +149,29 @@ header{
     padding: 5px;
     border-radius: 10px;
 }
-.resal{
+
+.resal {
     width: 200px;
     margin: 5px auto;
     background: palevioletred;
     padding: 5px;
     border-radius: 10px;
 }
-.resal a{
+
+.resal a {
     text-decoration: none;
     color: white;
 }
-.classname{
+
+.classname {
     font-size: 20px;
 }
-.teachername{
+
+.teachername {
     font-size: 20px;
 }
-.txt1-class2{
+
+.txt1-class2 {
     text-align: center;
     line-height: 30px;
     border: 1px solid gray;
@@ -137,18 +179,246 @@ header{
     margin-top: 10px;
     /* height: 220px; */
 }
-.res{
+
+.res {
     width: 200px;
     margin: 5px auto;
     background: red;
     padding: 5px;
     border-radius: 10px;
 }
-.res a{
+
+.res a {
     text-decoration: none;
     color: white;
 }
-.txtall{
+
+.txtall {
     display: flex;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width:575px) {
+    header {
+        height: 250px;
+    }
+    .title img {
+        width: 250px;
+        height: 200px;
+        margin: 0 auto;
+        margin-left: 35px;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+    main {
+        width: 450px;
+    }
+    .txt1-date {
+        width: 145px;
+    }
+    .txt1-class {
+        width: 145px;
+    }
+    .txt1 {
+        width: 145px;
+        margin: 0 3px;
+    }
+    .txt:last-child {
+        margin-right: 10px;
+    }
+    .full {
+        width: 120px;
+    }
+    .resal {
+        width: 120px;
+    }
+    .resk {
+        width: 120px;
+    }
+    .res {
+        width: 120px;
+    }
+    .foter {
+        margin: 0 auto;
+        width: 360px;
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    header {
+        height: 250px;
+    }
+    .title img {
+        width: 250px;
+        height: 200px;
+        margin: 0 auto;
+        margin-left: 35px;
+    }
+    .title h2 {
+        font-size: 28px;
+    }
+    main {
+        width: 550px;
+    }
+    .txt1-date {
+        width: 180px;
+    }
+    .txt1-class {
+        width: 180px;
+    }
+    .txt1 {
+        width: 180px;
+        margin: 0 3px;
+    }
+    .txt:last-child {
+        margin-right: 10px;
+    }
+    .full {
+        width: 140px;
+    }
+    .resal {
+        width: 140px;
+    }
+    .resk {
+        width: 140px;
+    }
+    .res {
+        width: 140px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    header {
+        height: 300px;
+    }
+    .title img {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .title h2 {
+        font-size: 28px;
+    }
+    main {
+        width: 770px;
+    }
+    .txt1-date {
+        width: 150px;
+    }
+    .txt1-class {
+        width: 150px;
+    }
+    .txt1 {
+        width: 150px;
+        margin: 0 3px;
+    }
+    .txt:last-child {
+        margin-right: 10px;
+    }
+    .full {
+        width: 140px;
+    }
+    .resal {
+        width: 140px;
+    }
+    .resk {
+        width: 140px;
+    }
+    .res {
+        width: 140px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    main {
+        width: 970px;
+    }
+    .txt1-date {
+        width: 183px;
+    }
+    .txt1-class {
+        width: 183px;
+    }
+    .txt1 {
+        width: 183px;
+        margin: 0 5px;
+    }
+    .full {
+        width: 170px;
+    }
+    .resal {
+        width: 170px;
+    }
+    .resk {
+        width: 170px;
+    }
+    .res {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
 }
