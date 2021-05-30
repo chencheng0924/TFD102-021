@@ -219,7 +219,7 @@ body {
 /*                   導覽列                   */
 
 .all {
-    width: 1200px;
+    width: 1180px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -241,7 +241,7 @@ body {
 .nav li a {
     text-decoration: none;
     color: #efedda;
-    font-size: 25px;
+    font-size: 23px;
     padding: 0 30px;
 }
 
@@ -252,7 +252,7 @@ body {
 }
 
 .nav i {
-    font-size: 35px;
+    font-size: 30px;
     padding: 0 30px 9px 34px;
     color: #454444;
 }

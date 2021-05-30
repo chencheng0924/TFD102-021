@@ -290,7 +290,7 @@ main {
     }
     .foter {
         margin: 0 auto;
-        width: 360px;
+        width: 100%;
         flex-wrap: wrap;
     }
     .infor {

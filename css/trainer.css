@@ -1,7 +1,11 @@
-
 /*         banner            */
-.banner{
-    width: 1200px;
+
+.nav .fa-bars {
+    display: none;
+}
+
+.banner {
+    width: 1180px;
     height: 200px;
     margin: 50px auto;
     background-color: black;
@@ -10,43 +14,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 3px gray ;
+    box-shadow: 1px 1px 3px gray;
     border-radius: 10px;
 }
-.banner h2{
+
+.banner h2 {
     padding: 30px 80px;
     border-radius: 10px;
     color: #e9d45d;
     font-size: 36px;
 }
+
+
 /*             main                  */
-.trainerall{
-    width: 1200px;
+
+.trainerall {
+    width: 1180px;
     margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.trainer1{
+
+.trainer1 {
     width: 350px;
     background: #efedda;
     position: relative;
     margin-bottom: 30px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 1px 1px 3px black ;
+    box-shadow: 1px 1px 3px black;
     transform: translateY(0px);
     transition: all .5s;
 }
-.trainer1:hover .more{
+
+.trainer1:hover .more {
     opacity: 1;
     transition: all 1s;
 }
-.trainer1img img{
+
+.trainer1img img {
     width: 350px;
     height: 350px;
 }
-.trainertxt{
+
+.trainertxt {
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,13 +66,15 @@
     align-items: flex-start;
     margin-left: 20px;
 }
-.trainer1txt{
+
+.trainer1txt {
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 0 0 20px 0;
 }
-.trainer1txt li a{
+
+.trainer1txt li a {
     text-decoration: none;
     background: #454444;
     color: #e9d45d;
@@ -68,20 +82,26 @@
     border-radius: 10px;
     font-size: 16px;
 }
-.trainer1txt li a:hover{
+
+.trainer1txt li a:hover {
     background: #efedda;
     color: #454444;
 }
+
+
 /* .trainer1txt ul:nth-child(5){
     align-self: flex-end;
 } */
-.trainer1txt li{
+
+.trainer1txt li {
     padding: 15px 15px;
 }
-.trainer1txt li:nth-child(5){
+
+.trainer1txt li:nth-child(5) {
     text-align: right;
 }
-.trainer1txt::before{
+
+.trainer1txt::before {
     content: "";
     width: 0;
     height: 0;
@@ -93,17 +113,418 @@
     left: 0;
     transform: translateY(-10px);
 }
-.trainer1:hover{
+
+.trainer1:hover {
     transform: translateY(-10px);
 }
-.trainer1:hover .trainer1txt{
+
+.trainer1:hover .trainer1txt {
     background: #e9d45d;
 }
-.trainer1:hover .trainer1txt::before{
+
+.trainer1:hover .trainer1txt::before {
     border-right: 175px solid #e9d45d;
     border-left: 175px solid #e9d45d;
 }
-.more{
+
+.more {
     opacity: 0;
     margin-top: 5px;
+}
+
+@media screen and (max-width:575px) {
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner h2 {
+        font-size: 24px;
+    }
+    .trainerall {
+        width: 100%;
+        flex-wrap: wrap
+    }
+    .trainertxt {
+        width: 100%;
+        height: 200px;
+        line-height: 1;
+    }
+    .trainer1txt ul li {
+        font-size: 16px;
+    }
+    .trainertxt p {
+        line-height: .5;
+    }
+    .trainer1img img {
+        width: 200px;
+        height: 100%;
+    }
+    .trainer1 {
+        display: flex;
+        width: 400px;
+        height: 250px;
+    }
+    .trainer1txt::before {
+        display: none;
+    }
+    .trainer1:hover .trainer1txt::before {
+        display: none;
+    }
+    .trainer1txt li a {
+        text-decoration: none;
+        background: #454444;
+        color: #e9d45d;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .trainer1txt h2 {
+        font-size: 20px;
+    }
+    .trainer1txt li {
+        font-size: 16px;
+        font-weight: 10px;
+    }
+    .trainertxt p {
+        font-size: 10px;
+    }
+    .more {
+        margin-top: -100px;
+    }
+    .foter {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner h2 {
+        font-size: 24px;
+    }
+    .trainerall {
+        width: 100%;
+        flex-wrap: wrap
+    }
+    .trainertxt {
+        width: 100%;
+        height: 200px;
+        line-height: 1;
+    }
+    .trainer1img img {
+        width: 200px;
+        height: 100%;
+    }
+    .trainer1 {
+        display: flex;
+        width: 460px;
+        height: 250px;
+    }
+    .trainer1txt::before {
+        display: none;
+    }
+    .trainer1:hover .trainer1txt::before {
+        display: none;
+    }
+    .trainer1txt li a {
+        text-decoration: none;
+        background: #454444;
+        color: #e9d45d;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .trainer1txt h2 {
+        font-size: 20px;
+    }
+    .trainer1txt li {
+        font-size: 16px;
+        font-weight: 10px;
+    }
+    .trainertxt p {
+        font-size: 10px;
+    }
+    .more {
+        margin-top: -75px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner h2 {
+        font-size: 24px;
+    }
+    .trainerall {
+        width: 100%;
+    }
+    .trainer1 {
+        width: 270px;
+        margin: 25px;
+    }
+    .trainer1img img {
+        width: 270px;
+        height: 270px;
+    }
+    .trainer1txt::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 36px solid transparent;
+        border-right: 150px solid #efedda;
+        border-left: 150px solid #efedda;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        transform: translateY(-10px);
+    }
+    .trainer1:hover .trainer1txt::before {
+        border-right: 150px solid #e9d45d;
+        border-left: 150px solid #e9d45d;
+    }
+    .trainer1txt h2 {
+        font-size: 22px;
+    }
+    .trainer1txt li {
+        font-size: 16px;
+        font-weight: 10px;
+    }
+    .trainertxt p {
+        font-size: 12px;
+    }
+    .trainer1txt li a {
+        text-decoration: none;
+        background: #454444;
+        color: #e9d45d;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .foter h4 a {
+        font-size: 18px;
+    }
+    .foter ul li a {
+        font-size: 14px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner h2 {
+        font-size: 28px;
+    }
+    .trainerall {
+        width: 100%;
+    }
+    .trainer1 {
+        width: 270px;
+        margin: 25px;
+    }
+    .trainer1img img {
+        width: 270px;
+        height: 270px;
+    }
+    .trainer1txt::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 36px solid transparent;
+        border-right: 150px solid #efedda;
+        border-left: 150px solid #efedda;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        transform: translateY(-10px);
+    }
+    .trainer1:hover .trainer1txt::before {
+        border-right: 150px solid #e9d45d;
+        border-left: 150px solid #e9d45d;
+    }
+    .trainer1txt h2 {
+        font-size: 22px;
+    }
+    .trainer1txt li {
+        font-size: 16px;
+        font-weight: 10px;
+    }
+    .trainertxt p {
+        font-size: 12px;
+    }
+    .trainer1txt li a {
+        text-decoration: none;
+        background: #454444;
+        color: #e9d45d;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
 }
