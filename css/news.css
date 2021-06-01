@@ -1,13 +1,18 @@
-.banner{
+.nav .fa-bars {
+    display: none;
+}
+
+.banner {
     background-image: url(../img/news\ banner.png);
     width: 100%;
-    height:280px;
+    height: 280px;
     margin: 50px 0;
     background-size: cover;
-    background-position:top -30px ;
+    background-position: top -30px;
     position: relative;
 }
-.banner1{
+
+.banner1 {
     background: black;
     position: absolute;
     bottom: 0;
@@ -16,12 +21,14 @@
     height: 100%;
     text-align: center;
 }
-.banner1 h2{
+
+.banner1 h2 {
     color: #efedda;
     line-height: 6;
     font-size: 48px;
 }
-main{
+
+main {
     width: 100%;
     height: 600px;
     margin: 50px auto;
@@ -29,147 +36,169 @@ main{
     background: #efedda;
     display: flex;
 }
-aside{
+
+aside {
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-aside h2{
+
+aside h2 {
     font-size: 36px;
     color: #454444;
 }
-aside button{
+
+aside button {
     background: #454444;
     color: #e9d45d;
     padding: 20px;
     border: 10px;
     margin-top: 50px;
 }
-aside button:hover{
+
+aside button:hover {
     cursor: pointer;
     background: #e9d45d;
     color: #454444;
     transform: scale(1.2);
     transition: all 1s;
 }
-.content{
+
+.content {
     width: 80%;
     display: flex;
-    overflow: hidden;    
+    overflow: hidden;
 }
-.content:hover .txt{
+
+.content:hover .txt {
     animation-play-state: paused;
 }
-.content img{
+
+.content img {
     width: 250px;
     height: 230px;
 }
-.txt{
-    width:400px ;
-    margin:  20px 50px;
+
+.txt {
+    width: 400px;
+    margin: 20px 50px;
     background: #e9d45d;
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    animation:  move 10s linear infinite;
+    animation: move 10s linear infinite;
 }
-@keyframes move{
-    0%{
-        transform:translateX(0%);
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
     }
-    100%{
-        transform:translateX(-100%);
+    100% {
+        transform: translateX(-100%);
     }
 }
-.last{
+
+.last {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
-.more{
+
+.more {
     width: 50px;
     cursor: pointer;
     background: #454444;
-    color: #e9d45d ;
+    color: #e9d45d;
     padding: 8px;
     border-radius: 10px;
 }
-.more:hover{
+
+.more:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
-.more2{
+
+.more2 {
     width: 50px;
     cursor: pointer;
     background: #454444;
-    color: #e9d45d ;
+    color: #e9d45d;
     padding: 8px;
     border-radius: 10px;
 }
-.more2:hover{
+
+.more2:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
-.more3{
+
+.more3 {
     width: 50px;
     cursor: pointer;
     background: #454444;
-    color: #e9d45d ;
+    color: #e9d45d;
     padding: 8px;
     border-radius: 10px;
 }
-.more3:hover{
+
+.more3:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
-.more4{
+
+.more4 {
     width: 50px;
     cursor: pointer;
     background: #454444;
-    color: #e9d45d ;
+    color: #e9d45d;
     padding: 8px;
     border-radius: 10px;
 }
-.more4:hover{
+
+.more4:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
+
+
 /* */
-.newsall{
+
+.newsall {
     width: 100%;
     height: 100vh;
     position: fixed;
     display: none;
     z-index: 5;
-    
-    animation-name: fade ;
+    animation-name: fade;
     animation-timing-function: ease;
     animation-duration: 1.5s;
 }
-@keyframes fade{
-    0%{
+
+@keyframes fade {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 100%;
     }
 }
-.news{
-    background: rgba(0,0,0,.8);
+
+.news {
+    background: rgba(0, 0, 0, .8);
     position: relative;
     width: 100%;
     height: 100vh;
-
 }
-.news img{
+
+.news img {
     width: 200px;
     height: 200px;
 }
-.news1{
+
+.news1 {
     background: #efedda;
     width: 900px;
     display: flex;
@@ -180,24 +209,27 @@ aside button:hover{
     top: 30%;
     left: 20%;
 }
-.news1 h2{
+
+.news1 h2 {
     text-align: center;
     border-top: 2px solid #454444;
     border-bottom: 2px solid #454444;
     padding: 10px 0;
     color: red;
 }
-.news1txt{
+
+.news1txt {
     display: flex;
     padding: 20px;
 }
 
-.news1txt p{
+.news1txt p {
     align-self: center;
     font-size: 24px;
     padding: 20px;
 }
-.news2{
+
+.news2 {
     background: #efedda;
     width: 900px;
     display: flex;
@@ -208,24 +240,27 @@ aside button:hover{
     top: 30%;
     left: 20%;
 }
-.news2 h2{
+
+.news2 h2 {
     text-align: center;
     border-top: 2px solid #454444;
     border-bottom: 2px solid #454444;
     padding: 10px 0;
     color: red;
 }
-.news2txt{
+
+.news2txt {
     display: flex;
     padding: 20px;
 }
 
-.news2txt p{
+.news2txt p {
     align-self: center;
     font-size: 24px;
     padding: 20px;
 }
-.news3{
+
+.news3 {
     background: #efedda;
     width: 900px;
     display: flex;
@@ -236,24 +271,27 @@ aside button:hover{
     top: 30%;
     left: 20%;
 }
-.news3 h2{
+
+.news3 h2 {
     text-align: center;
     border-top: 2px solid #454444;
     border-bottom: 2px solid #454444;
     padding: 10px 0;
     color: red;
 }
-.news3txt{
+
+.news3txt {
     display: flex;
     padding: 20px;
 }
 
-.news3txt p{
+.news3txt p {
     align-self: center;
     font-size: 24px;
     padding: 20px;
 }
-.news4{
+
+.news4 {
     background: #efedda;
     width: 900px;
     display: flex;
@@ -264,20 +302,391 @@ aside button:hover{
     top: 30%;
     left: 20%;
 }
-.news4 h2{
+
+.news4 h2 {
     text-align: center;
     border-top: 2px solid #454444;
     border-bottom: 2px solid #454444;
     padding: 10px 0;
     color: red;
 }
-.news4txt{
+
+.news4txt {
     display: flex;
     padding: 20px;
 }
 
-.news4txt p{
+.news4txt p {
     align-self: center;
     font-size: 24px;
     padding: 20px;
+}
+
+@media screen and (max-width:575px) {
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .all img {
+        width: 150px;
+        height: 150px;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+    .banner1 {
+        width: 200px;
+        height: 200px;
+        left: 25%;
+    }
+    .banner h2 {
+        height: 200px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 8;
+        /* padding-bottom: 100px; */
+    }
+    aside h2 {
+        font-size: 20px;
+        margin: 5px;
+    }
+    aside button {
+        padding: 10px;
+    }
+    main {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        justify-content: center;
+    }
+    .content {
+        width: 100%;
+        overflow: none;
+        flex-direction: column;
+    }
+    .content img {
+        width: 150px;
+        height: 100px;
+    }
+    .txt {
+        height: 250px;
+        width: 100%;
+        margin: 20px auto;
+        animation: none;
+        flex-direction: row;
+    }
+    .txt h2 {
+        font-size: 18px;
+        margin: 20px 5px;
+    }
+    .txt p {
+        font-size: 14px;
+        margin: 20px 5px;
+    }
+    .last {
+        /* margin-top: 100px; */
+        flex-direction: column;
+    }
+    .foter {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+    .banner1 {
+        width: 200px;
+        height: 200px;
+        left: 25%;
+    }
+    .banner h2 {
+        height: 200px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 8;
+        /* padding-bottom: 100px; */
+    }
+    aside h2 {
+        font-size: 20px;
+        margin: 5px;
+    }
+    aside button {
+        padding: 10px;
+    }
+    main {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        justify-content: center;
+    }
+    .content {
+        width: 100%;
+        overflow: none;
+        flex-direction: column;
+    }
+    .content img {
+        width: 150px;
+        height: 100px;
+    }
+    .txt {
+        height: 250px;
+        width: 100%;
+        margin: 20px auto;
+        animation: none;
+        flex-direction: row;
+    }
+    .txt h2 {
+        font-size: 18px;
+        margin: 20px 5px;
+    }
+    .txt p {
+        font-size: 14px;
+        margin: 20px 5px;
+    }
+    .last {
+        /* margin-top: 100px; */
+        flex-direction: column;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+    .banner1 {
+        width: 300px;
+        height: 200px;
+        left: 20%;
+    }
+    .banner h2 {
+        height: 200px;
+        width: 500px;
+        line-height: 4.5;
+        /* padding-bottom: 100px; */
+    }
+    aside h2 {
+        font-size: 20px;
+    }
+    main {
+        height: 1250px;
+    }
+    .content {
+        width: 100%;
+        overflow: none;
+        flex-direction: column;
+    }
+    .content img {
+        width: 250px;
+        height: 200px;
+    }
+    .txt {
+        width: 100%;
+        margin: 20px;
+        animation: none;
+        flex-direction: row;
+    }
+    .txt h2 {
+        font-size: 18px;
+        margin: 20px 5px;
+    }
+    .txt p {
+        font-size: 14px;
+        margin: 20px 5px;
+    }
+    .last {
+        margin-top: 100px;
+    }
+    .foter h4 a {
+        font-size: 18px;
+    }
+    .foter ul li a {
+        font-size: 14px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+    .banner1 {
+        width: 500px;
+        height: 200px;
+        left: 27%;
+    }
+    .banner h2 {
+        height: 200px;
+        width: 500px;
+        line-height: 4.5;
+        /* padding-bottom: 100px; */
+    }
+    aside h2 {
+        font-size: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content img {
+        width: 200px;
+        height: 150px;
+    }
+    .txt {
+        width: 250px;
+        margin: 20px;
+    }
+    .txt h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .txt p {
+        font-size: 14px;
+    }
+    .last {
+        margin-top: 100px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
 }

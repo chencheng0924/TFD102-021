@@ -1,22 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
+
+.nav .fa-bars {
+    display: none;
+}
+
+main {
     width: 1200px;
     height: 1250px;
     background-color: #F2EDE5;
     margin: 50px auto;
 }
-.title h2{
+
+.allpro {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h2 {
     padding-left: 50px;
     padding-top: 50px;
     font-size: 36px;
     font-weight: 800;
 }
-.items{
-    width:1000px;
+
+.items {
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -25,167 +39,728 @@ main{
     color: #e9d45d;
     margin-top: 20px;
 }
-.item{
-    width: 150px;
+
+.item {
+    width: 15%;
     border: 1px solid #e9d45d;
     border-left: 0px;
     padding: 20px 0;
 }
-.item-1{
-    width: 400px;
+
+.item-1 {
+    width: 40%;
     border: 1px solid #e9d45d;
     padding: 20px 0;
 }
-.products{
-    width:1000px;
+
+.products {
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     text-align: center;
     color: #454444;
 }
-.product{
-    width: 150px;
+
+.product {
+    width: 15%;
     height: 200px;
     border-left: 0px;
     padding: 20px 0;
     line-height: 10;
     background: white;
 }
-.product-1{
-    width: 400px;
+
+.product-1 {
+    width: 40%;
     height: 200px;
     padding: 20px 0;
     display: flex;
     align-items: center;
     background: white;
-
 }
-.product-1 img{
+
+.product-1 img {
     width: 150px;
 }
-.recommend{
+
+.recommend {
     width: 800px;
-    margin:50px 0 0 200px;
+    margin: 50px 0 0 200px;
     background: white;
     padding: 25px;
 }
-.recommendtitle{
+
+.recommendtitle {
     margin-bottom: 20px;
 }
-.recommendproduct{
+
+.recommendproduct {
     display: flex;
 }
-.recommendproduct1{
+
+.recommendproduct1 {
     display: flex;
-    margin:0 30px;
+    margin: 0 30px;
 }
-.recommendproduct1txt{
+
+.recommendproduct1txt {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
 }
-.recommendproduct img{
+
+.recommendproduct img {
     width: 150px;
     height: 150px;
 }
-.recommendproduct2{
+
+.recommendproduct2 {
     display: flex;
-    margin:0 30px;
+    margin: 0 30px;
 }
-.recommendproduct2txt{
+
+.recommendproduct2txt {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
 }
-.recommend button{
+
+.recommend button {
     cursor: pointer;
     background: #454444;
     color: #e9d45d;
     padding: 5px;
 }
-.check{
+
+.check {
     width: 1000px;
     height: 450px;
     margin: 50px auto;
     background: white;
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
 }
-.checkselect{
+
+.checkselect {
     width: 650px;
-    padding: 0 20px;
+    /* padding: 0 10px; */
 }
-.checkselect select{
-    width: 95%;
+
+.checkselect select {
+    width: 93%;
     height: 30px;
+    margin: 0 10px;
 }
-.checkselect h4{
-    margin-top: 30px;
+
+.checkselect h4 {
+    margin: 20px 10px 0 10px;
 }
-.checktitle{
+
+.checkselect p {
+    margin: 0 10px;
+}
+
+.checktitle {
     display: flex;
 }
-.checkselecttitle{
+
+.checkselecttitle {
     width: 620px;
     background: #454444;
     color: #e9d45d;
     padding: 20px;
     margin-right: 30px;
-
 }
-.checkconfirmtitle{
+
+.checkconfirmtitle {
     width: 350px;
     background: #454444;
     color: #e9d45d;
     padding: 20px;
-
 }
-.checkconfirm{
+
+.checkconfirm {
     width: 350px;
-    padding: 20px;   
+    /* padding: 0 10px; */
     display: flex;
     flex-direction: column;
 }
 
-.checkprice{
+.checkprice {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    margin: 10px;
 }
-.checkshipping{
+
+.checkshipping {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    margin: 10px;
 }
-.bonus input{
-    margin: 10px 0;
+
+.bonus {
+    margin: 10px;
+}
+
+.bonus input {
+    margin: 10px;
     width: 200px;
     height: 30px;
 }
-.bonus button{
-    padding:3px;
-    width: 60px;
+
+.bonus button {
+    padding: 3px;
+    width: 50px;
     background: #454444;
     color: #e9d45d;
 }
-.checklastbtn{
+
+.checklastbtn {
     width: 100%;
     height: 30px;
     background: green;
     color: white;
     align-items: flex-end;
 }
-.checklastbtn:hover{
+
+.checklastbtn:hover {
     cursor: pointer;
 }
-.checklast{
+
+.checklast {
     width: 100%;
     height: 100px;
     text-align: center;
     padding-top: 30px;
     background: #e9d45d;
     margin-top: 30px;
+}
+
+@media screen and (max-width:575px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .all img {
+        width: 150px;
+        height: 150px;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    main {
+        width: 100%;
+        height: 1500px;
+    }
+    .title h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .items {
+        width: 100%;
+        margin: auto;
+        display: none;
+    }
+    .products {
+        width: 100%;
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+    .product-1 {
+        width: 320px;
+        padding: 0;
+    }
+    .product-1 h4 {
+        font-size: 16px;
+    }
+    .product {
+        width: 60px;
+    }
+    .product p {
+        font-size: 6px;
+        line-height: 13;
+    }
+    .recommend {
+        width: 350px;
+        margin: 30px auto;
+    }
+    .recommendproduct {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .recommendproduct1 {
+        margin-bottom: 20px;
+    }
+    .recommendproduct1img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct1txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct1txt p {
+        font-size: 12px;
+    }
+    .recommendproduct2img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct2txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct2txt p {
+        font-size: 12px;
+    }
+    .recommend button {
+        width: 100px;
+        padding: 1px;
+    }
+    .check {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .checkselect {
+        width: 100%;
+    }
+    .checkselect p {
+        font-size: 6px;
+    }
+    .checkselect select {
+        margin-bottom: 10px;
+    }
+    .checkselecttitle {
+        width: 100%;
+        margin: auto;
+    }
+    .checkconfirm {
+        width: 100%;
+    }
+    .checkconfirmtitle {
+        width: 100%;
+        margin: auto;
+    }
+    .checklastbtn {
+        width: 90%;
+        margin: auto;
+    }
+    .bonus input {
+        width: 150px;
+    }
+    .checklast p {
+        font-size: 12px;
+    }
+    .foter {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    main {
+        width: 100%;
+        height: 1500px;
+    }
+    .title h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .items {
+        width: 100%;
+        margin: auto;
+        display: none;
+    }
+    .products {
+        width: 100%;
+        margin: 10px auto;
+        flex-wrap: nowrap;
+    }
+    .product-1 {
+        width: 450px;
+        padding: 0;
+    }
+    .product-1 h4 {
+        width: 50%;
+    }
+    .product-1 h4 {
+        font-size: 16px;
+    }
+    .product {
+        width: 90px;
+    }
+    .product p {
+        font-size: 6px;
+        line-height: 13;
+    }
+    .recommend {
+        width: 350px;
+        margin: 30px auto;
+    }
+    .recommendproduct {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .recommendproduct1 {
+        margin-bottom: 20px;
+    }
+    .recommendproduct1img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct1txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct1txt p {
+        font-size: 12px;
+    }
+    .recommendproduct2img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct2txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct2txt p {
+        font-size: 12px;
+    }
+    .recommend button {
+        width: 100px;
+        padding: 1px;
+    }
+    .check {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .checkselect {
+        width: 100%;
+    }
+    .checkselect p {
+        font-size: 6px;
+    }
+    .checkselect select {
+        margin-bottom: 10px;
+    }
+    .checkselecttitle {
+        width: 100%;
+    }
+    .checkconfirm {
+        width: 100%;
+    }
+    .checkconfirmtitle {
+        width: 100%;
+    }
+    .checklastbtn {
+        width: 90%;
+        margin: auto;
+    }
+    .bonus input {
+        width: 150px;
+    }
+    .checklast p {
+        font-size: 12px;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .navlist11 li a {
+        font-size: 12px;
+    }
+    .navlist22 li a {
+        font-size: 12px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 20px;
+        color: #e9d45d;
+    }
+    main {
+        width: 100%;
+        height: 1170px;
+    }
+    .title h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .items {
+        width: 100%;
+        margin: auto;
+    }
+    .products {
+        width: 100%;
+        margin: auto;
+    }
+    .recommend {
+        width: 650px;
+        margin: 30px auto;
+    }
+    .recommendproduct1img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct1txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct1txt p {
+        font-size: 12px;
+    }
+    .recommendproduct2img img {
+        width: 100px;
+        height: 100px;
+    }
+    .recommendproduct2txt h4 {
+        width: 120px;
+        font-size: 12px;
+    }
+    .recommendproduct2txt p {
+        font-size: 12px;
+    }
+    .recommend button {
+        width: 100px;
+        padding: 1px;
+    }
+    .check {
+        width: 100%;
+    }
+    .checkselect {
+        width: 60%;
+    }
+    .checkselect p {
+        font-size: 10px;
+    }
+    .checkselecttitle {
+        width: 95%;
+    }
+    .checkconfirm {
+        width: 40%;
+    }
+    .checkconfirmtitle {
+        width: 95%;
+    }
+    .checklastbtn {
+        width: 90%;
+        margin: auto;
+    }
+    .bonus input {
+        width: 150px;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header {
+        width: 100%;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    main {
+        width: 100%;
+        height: 1170px;
+    }
+    .title h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .items {
+        width: 900px;
+        margin: auto;
+    }
+    .products {
+        width: 900px;
+        margin: auto;
+    }
+    .recommend {
+        width: 700px;
+        margin: 30px auto;
+    }
+    .recommendproduct1img img {
+        width: 120px;
+        height: 120px;
+    }
+    .recommendproduct1txt h4 {
+        width: 120px;
+        font-size: 14px;
+    }
+    .recommendproduct1txt p {
+        font-size: 14px;
+    }
+    .recommendproduct2img img {
+        width: 120px;
+        height: 120px;
+    }
+    .recommendproduct2txt h4 {
+        width: 120px;
+        font-size: 14px;
+    }
+    .recommendproduct2txt p {
+        font-size: 14px;
+    }
+    .recommend button {
+        width: 100px;
+        padding: 1px;
+    }
+    .check {
+        width: 900px;
+    }
+    .checkselect {
+        width: 60%;
+    }
+    .checkselect p {
+        font-size: 14px;
+    }
+    .checkselecttitle {
+        width: 530px;
+    }
+    .checkconfirm {
+        width: 40%;
+    }
+    .checkconfirmtitle {
+        width: 360px;
+    }
+    .checklastbtn {
+        width: 90%;
+        margin: auto;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
+    }
 }

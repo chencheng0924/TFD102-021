@@ -107,6 +107,10 @@ main {
     .all {
         max-width: 100%;
     }
+    .all img {
+        width: 150px;
+        height: 150px;
+    }
     .nav li a {
         font-size: 20px;
         padding: 0 20px;

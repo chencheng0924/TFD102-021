@@ -344,6 +344,8 @@ body {
 .hambarnavmove {
     animation-name: hammove;
     animation-duration: 1s;
+    z-index: 2;
+    position: fixed;
 }
 
 .hambarnavback {

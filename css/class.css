@@ -203,6 +203,10 @@ main {
     .all {
         max-width: 100%;
     }
+    .all img {
+        width: 150px;
+        height: 150px;
+    }
     .nav li {
         display: none;
     }

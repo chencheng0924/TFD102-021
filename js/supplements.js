@@ -47,8 +47,7 @@ let allproduct = [{
     Image: './img/supplement/pcp.jpg',
     h2: 'Myprotein高蛋白美式煎餅粉',
     price: 980
-}
-]
+}]
 let shopcarbtn = document.querySelectorAll('.product i')
 let shoppingcar = document.querySelector('.shoppingcar')
 let car = document.querySelector('.car')
@@ -56,7 +55,7 @@ let supcheck1 = document.querySelector('.supcheck1')
 let shoppcar = []
 
 shopcarbtn.forEach((li) => {
-    li.addEventListener('click', function (w) {
+    li.addEventListener('click', function(w) {
         w.preventDefault()
         console.log(w)
         let target_product = w.target.parentElement.parentElement.children[1].textContent
@@ -64,6 +63,7 @@ shopcarbtn.forEach((li) => {
             return li.newh2 == target_product
         })
         console.log(index)
+        console.log(shoppcar)
         if (index == -1) {
             allproduct.forEach((p) => {
                 if (p.h2 == target_product) {
@@ -76,10 +76,9 @@ shopcarbtn.forEach((li) => {
                     shoppcar.push(newpage)
                 }
             })
-        }
-        else {
+        } else {
             shoppcar[index].newnum++
-            shoppcar[index].newprice += shoppcar[index].newprice
+                shoppcar[index].newprice += shoppcar[index].newprice
         }
         let str = ''
         shoppcar.forEach((x) => {
@@ -97,33 +96,37 @@ shopcarbtn.forEach((li) => {
         console.log(str)
         car.innerHTML = str
 
-
         let total = 0
         let str2 = ''
         shoppcar.forEach((q) => {
             total += q.newprice
-            console.log(total)
+                // console.log(total)
             str2 = `<div>Total:NT$${total}<div>`
         })
         supcheck1.innerHTML = str2
 
+        shoppingcar.style.transform = 'transXlate(0%)'
+        shoppingcar.style.display = 'block'
+    })
+})
 
-        let str3 = ''
-        let str4 = ''
-        let total123 = 0
-        let deletei = document.querySelectorAll('.superprice i')
-        console.log(deletei)
-        deletei.forEach((di) => {
-            di.addEventListener('click', function (s) {
-                let dproduct = s.target.parentElement.parentElement.children[0].textContent
-                shoppcar.forEach((x) => {
-                    if (dproduct == x.newh2) {
-                        let index1 = shoppcar.findIndex((u) => {
-                            return u.newh2 == dproduct
-                        })
-                        shoppcar.splice(index1, 1)
-                        shoppcar.forEach((g) => {
-                            str3 += `<div class="supercar">
+let deletei = document.querySelectorAll('.fa-trash-alt')
+console.log(deletei)
+shoppingcar.addEventListener('click', function(e) {
+    if (e.target.className == 'fas fa-trash-alt') {
+        let dproduct = e.target.parentElement.parentElement.children[0].textContent
+        console.log(dproduct)
+        shoppcar.forEach((x) => {
+            if (dproduct == x.newh2) {
+                let index1 = shoppcar.findIndex((u) => {
+                    return u.newh2 == dproduct
+                })
+                shoppcar.splice(index1, 1)
+                console.log(shoppcar)
+                console.log(index1)
+                let str3 = ''
+                shoppcar.forEach((g) => {
+                    str3 += `<div class="supercar">
                             <div><img src="${g.newimage}"></div> 
                             <div><h2>${g.newh2}</h2> 
                             <div class="superprice">
@@ -133,60 +136,23 @@ shopcarbtn.forEach((li) => {
                             <i class="fas fa-trash-alt"></i></div>
                             </div>  
                             </div>`
-                        })
-                        car.innerHTML = str3
-                    }
                 })
-                console.log(shoppcar)
-                shoppcar.forEach((g) => {
-                    total123 += g.newprice
-                    console.log(total123)
-                })
-                str4 = `<div>Total:NT$${total123}<div>`
-                supcheck1.innerHTML = str4
-                console.log(shoppcar)
-            })
+                console.log(str3)
+                car.innerHTML = str3
+            }
         })
-        shoppingcar.style.transform = 'transXlate(0%)'
-        shoppingcar.style.display = 'block'
-    })
+        let str4 = ''
+        let total123 = 0
+        shoppcar.forEach((g) => {
+            total123 += g.newprice
+            console.log(total123)
+            str4 = `<div>Total:NT$${total123}<div>`
+        })
+        console.log(shoppcar)
+        supcheck1.innerHTML = str4
+    }
 })
 
-
-
-// shopcarbtn.forEach((li) => {
-//     li.addEventListener('click', function (e) {
-//         e.preventDefault()
-//         let target_product = e.target.parentElement.parentElement.children[1].textContent;
-//         let index = shoppcar.findIndex((li) => {
-//             return li.newh2 == target_product
-//         })
-//         if (index == -1) {
-//             allproduct.forEach(function (product) {
-//                 if (target_product == product.h2) {
-//                     let newshopcar = {
-//                         newimage: product.Image,
-//                         newh2: product.h2,
-//                         newprice: product.price,
-//                         newnum: 1
-//                     }
-//                     shoppcar.push(newshopcar)
-//                     console.log(newshopcar)
-//                 }
-//             })
-//         } else {
-//             shoppcar[index].newnum++
-
-//         }
-//         let str = ''
-//         shoppcar.forEach((p) => {
-//             str += `<div><img src="${p.newimage}"></div> <p>${p.newh2}</p> <p>${p.newprice}</p> <p>${p.newnum}</p>`
-//         })
-//         shoppingcar.innerHTML = str
-//         shoppingcar.style.transform = 'translateX(0%)'
-//         shoppingcar.style.display = 'block'
-//     })
-// })
 
 // 購物車
 let shopcar = document.querySelector('.shoppingcar')
@@ -206,7 +172,6 @@ function shopcargo() {
 }
 shopcatbtn.addEventListener('click', shopcargo)
 
-
 // 側邊選單
 let aside1 = document.querySelector('.aside1')
 let aside1go = true
@@ -215,43 +180,61 @@ let aside2g0 = true
 let aside3 = document.querySelector('.aside3')
 let aside3go = true
 
-let asidei1 = document.querySelector('.asidei1 i')
-let asidei2 = document.querySelector('.asidei2 i')
-let asidei3 = document.querySelector('.asidei3 i')
+let asidei1 = document.querySelector('.asidei1 .fa-plus')
+let asidei11 = document.querySelector('.asidei1 .fa-minus')
 
+let asidei2 = document.querySelector('.asidei2 .fa-plus')
+let asidei22 = document.querySelector('.asidei2 .fa-minus')
 
-asidei1.addEventListener('click', function () {
+let asidei3 = document.querySelector('.asidei3 .fa-plus')
+let asidei33 = document.querySelector('.asidei3 .fa-minus')
+
+asidei1.addEventListener('click', function() {
     if (aside1go) {
         aside1.style.display = 'block'
         aside1.classList.add('abs')
-        aside1go = !aside1go
-    } else {
-        aside1.style.display = 'none'
-        aside1.classList.remove('abs')
-        aside1go = !aside1go
+        asidei1.style.display = 'none'
+        asidei11.style.display = 'inline-block'
     }
-
 })
-asidei2.addEventListener('click', function () {
-    if (aside2g0) {
+asidei11.addEventListener('click', function() {
+    if (aside1go) {
+        aside1.style.display = 'none'
+        aside1.classList.add('back')
+        asidei1.style.display = 'inline-block'
+        asidei11.style.display = 'none'
+    }
+})
+asidei2.addEventListener('click', function() {
+    if (aside1go) {
         aside2.style.display = 'block'
         aside2.classList.add('abs')
-        aside2g0 = !aside2g0
-    } else {
-        aside2.style.display = 'none'
-        aside2.classList.remove('abs')
-        aside2g0 = !aside2g0
+        asidei2.style.display = 'none'
+        asidei22.style.display = 'inline-block'
     }
 })
-asidei3.addEventListener('click', function () {
-    if (aside3go) {
+asidei22.addEventListener('click', function() {
+    if (aside1go) {
+        aside2.style.display = 'none'
+        aside2.classList.add('back')
+        asidei2.style.display = 'inline-block'
+        asidei22.style.display = 'none'
+    }
+})
+asidei3.addEventListener('click', function() {
+    if (aside1go) {
         aside3.style.display = 'block'
         aside3.classList.add('abs')
-        aside3go = !aside3go
-    } else {
+        asidei3.style.display = 'none'
+        asidei33.style.display = 'inline-block'
+    }
+})
+asidei33.addEventListener('click', function() {
+    if (aside1go) {
         aside3.style.display = 'none'
-        aside3.classList.remove('abs')
-        aside3go = !aside3go
+        aside3.classList.add('abs2')
+        asidei3.style.display = 'inline-block'
+        asidei33.style.display = 'none'
     }
 })
 
@@ -267,87 +250,48 @@ let product = document.querySelectorAll('.product h4')
 let asidei0 = document.querySelector('.asidei0 a')
 let productall = document.querySelectorAll('.product1')
 
-asidei0.addEventListener('click', function (e) {
+asidei0.addEventListener('click', function(e) {
     e.preventDefault()
-    productall.forEach(function (value) {
+    productall.forEach(function(value) {
         value.style.display = 'block'
     })
 })
 
 function search(proteintype) {
-    product.forEach(function (value) {
+    product.forEach(function(value) {
         if (value.textContent == proteintype) {
             console.log(value)
             value.parentElement.style.display = 'block'
-        }
-        else if (value.textContent !== proteintype) {
+        } else if (value.textContent !== proteintype) {
             value.parentElement.style.display = 'none'
         }
     })
 }
-aside11.addEventListener('click', function (e) {
+aside11.addEventListener('click', function(e) {
     e.preventDefault()
     search('濃縮')
 })
-aside12.addEventListener('click', function (e) {
+aside12.addEventListener('click', function(e) {
     e.preventDefault()
     search('分離')
 })
-aside21.addEventListener('click', function (e) {
+aside21.addEventListener('click', function(e) {
     e.preventDefault()
     search('綜合維他命')
 })
-aside22.addEventListener('click', function (e) {
+aside22.addEventListener('click', function(e) {
     e.preventDefault()
     search('肌酸')
 })
-aside23.addEventListener('click', function (e) {
+aside23.addEventListener('click', function(e) {
     e.preventDefault()
     search('BCAA')
 })
-aside31.addEventListener('click', function (e) {
+aside31.addEventListener('click', function(e) {
     e.preventDefault()
     search('蛋白棒')
 })
-aside32.addEventListener('click', function (e) {
+aside32.addEventListener('click', function(e) {
     e.preventDefault()
     search('高蛋白料理')
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
