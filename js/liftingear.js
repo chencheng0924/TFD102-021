@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
     }
 })
 let list2 = document.querySelectorAll('.product2')
-document.addEventListener('scroll', function () {
+document.addEventListener('scroll', function() {
 
     if (scrollY > 400) {
         list2[0].style.transform = 'translateX(0%)'
@@ -22,8 +22,7 @@ document.addEventListener('scroll', function () {
 })
 
 // 購物車
-let allproduct = [
-    {
+let allproduct = [{
         image: './img/lifting/TJ2.PNG',
         h2: '傳統拉力帶',
         price: 580,
@@ -57,49 +56,53 @@ let totalprice = document.querySelector('.totalprice')
 let select = document.querySelectorAll('main select')
 
 shopbtn.forEach((li) => {
-    li.addEventListener('click', function (e) {
+    li.addEventListener('click', function(e) {
         e.preventDefault()
         let target_product = e.target.parentElement.parentElement.parentElement.children[0].textContent
-        let index = product.findIndex((p) => {
-            return p.newh2 == target_product
-        })
         let target_size = e.target.parentElement.parentElement.parentElement.children[2].children[0].value
-
-        allproduct.forEach((x) => {
-            if (index == -1) {
+        console.log(target_size)
+        console.log(target_product)
+        let index = product.findIndex((p) => {
+            return (p.newh2 == target_product) && (p.size == target_size)
+        })
+        console.log(index)
+        if (index == -1) {
+            allproduct.forEach((x) => {
                 if (x.h2 == target_product) {
                     let newpage = {
                         newimage: x.image,
                         newh2: x.h2,
                         newprice: x.price,
                         newnum: 1,
-                        size: `SIZE:${target_size}`
+                        size: `${target_size}`
                     }
                     product.push(newpage)
                 }
-            }
-            else if (index !== -1) {
+            })
+        } else if (index !== -1) {
+            // console.log(product)
+            // console.log(product[0].size)
+            // console.log(index)
+            if (product[index].newh2 == target_product && product[index].size !== `${target_size}`) {
                 product.forEach((c) => {
-                    if (x.h2 == target_product && c.size !== `SIZE:${target_size}`) {
-                        console.log(c.size)
-                        console.log(c)
-                        console.log('hi')
-                        let newpage = {
-                            newimage: x.image,
-                            newh2: x.h2,
-                            newprice: x.price,
-                            newnum: 1,
-                            size: `SIZE:${target_size}`
-                        }
-                        product.push(newpage)
+                    // console.log(c)
+                    // console.log(c.size)
+                    // console.log(c.newh2)
+                    let newpage = {
+                        newimage: c.newimage,
+                        newh2: c.newh2,
+                        newprice: c.newprice,
+                        newnum: 1,
+                        size: `${target_size}`
                     }
+                    product.push(newpage)
                 })
-            }
-            else {
+            } else {
                 product[index].newnum++
-                product[index].newprice += product[index].newprice
+                    product[index].newprice += product[index].newprice
             }
-        })
+        }
+
         let str = ''
         product.forEach((q) => {
             str += `<div class="shopcarp">
@@ -116,57 +119,6 @@ shopbtn.forEach((li) => {
                 `
         })
         shopcar.innerHTML = str
-        // allproduct.forEach((x) => {
-        //     if (index == -1) {
-        //         if (x.h2 == target_product) {
-        //             let newpage = {
-        //                 newimage: x.image,
-        //                 newh2: x.h2,
-        //                 newprice: x.price,
-        //                 newnum: 1,
-        //                 size: `SIZE:${target_size}`
-        //             }
-        //             product.push(newpage)
-        //         }
-        //     }
-        //     else if (index !== -1) {
-        //         product.forEach((c) => {
-        //             if (x.h2 == target_product && c.size !== `SIZE:${target_size}`) {
-        //                 console.log(c.size)
-        //                 console.log(c)
-        //                 console.log('hi')
-        //                 let newpage = {
-        //                     newimage: x.image,
-        //                     newh2: x.h2,
-        //                     newprice: x.price,
-        //                     newnum: 1,
-        //                     size: `SIZE:${target_size}`
-        //                 }
-        //                 product.push(newpage)
-        //             }
-        //         })
-        //     }
-        //     else {
-        //         product[index].newnum++
-        //         product[index].newprice += product[index].newprice
-        //     }
-        // })
-        // let str = ''
-        // product.forEach((q) => {
-        //     str += `<div class="shopcarp">
-        //     <div class="productimg"><img src="${q.newimage}"></div>
-        //         <div><h2>${q.newh2}</h2>
-        //         <div class="size123">${q.size}</div>
-        //         <div class="productprice">
-        //         <p>${q.newnum}</p>
-        //         <p>X</p>
-        //         <p>${q.newprice}</p>
-        //         <i class="fas fa-trash-alt"></i></div>
-        //         </div>
-        //         </div>
-        //         `
-        // })
-        // shopcar.innerHTML = str
 
         let str2 = ''
         let total = 0
@@ -176,24 +128,24 @@ shopbtn.forEach((li) => {
         str2 += `<div>Total:NT$${total}</div>`
         totalprice.innerHTML = str2
 
-        let str3 = ''
-        let str4 = ''
-        let total123 = 0
-        let deletei = document.querySelectorAll('.productprice i')
-        console.log(product)
-        deletei.forEach((di) => {
-            di.addEventListener('click', function (y) {
-                let dproducth2 = y.target.parentElement.parentElement.children[0].textContent
-                let dproductsize = y.target.parentElement.parentElement.children[1].textContent
-                product.forEach((si) => {
-                    if (si.newh2 == dproducth2 && si.size == dproductsize) {
-                        let index1 = product.findIndex((ni) => {
-                            return ni.newh2 == dproducth2
-                        })
-                        product.splice(index1, 1)
 
-                        product.forEach((q) => {
-                            str3 += `<div class="shopcarp">
+        shopcarall.style.transform = 'translateX(0%)'
+    })
+})
+
+shopcarall.addEventListener('click', function(e) {
+    if (e.target.className = 'fas fa-trash-alt') {
+        let dproducth2 = e.target.parentElement.parentElement.children[0].textContent
+        let dproductsize = e.target.parentElement.parentElement.children[1].textContent
+        product.forEach((si) => {
+            if (si.newh2 == dproducth2 && si.size == dproductsize) {
+                let index1 = product.findIndex((ni) => {
+                    return ni.newh2 == dproducth2
+                })
+                product.splice(index1, 1)
+                let str3 = ''
+                product.forEach((q) => {
+                    str3 += `<div class="shopcarp">
                         <div class="productimg"><img src="${q.newimage}"></div>
                         <div><h2>${q.newh2}</h2>
                         <div class="size123">${q.size}</div>
@@ -205,18 +157,17 @@ shopbtn.forEach((li) => {
                         </div>
                         </div>
                         `
-                        })
-                        shopcar.innerHTML = str3
-                    }
                 })
-                product.forEach((k) => {
-                    total123 += k.newprice
-                })
-                str4 += `<div>Total:NT$${total123}</div>`
-                totalprice.innerHTML = str4
-            })
+                shopcar.innerHTML = str3
+            }
         })
-
-        shopcarall.style.transform = 'translateX(0%)'
-    })
+        let str4 = ''
+        let total123 = 0
+        product.forEach((k) => {
+            total123 += k.newprice
+            str4 = `<div>Total:NT$${total123}</div>`
+            console.log(total123)
+        })
+        totalprice.innerHTML = str4
+    }
 })

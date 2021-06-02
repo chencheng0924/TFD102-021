@@ -590,19 +590,21 @@ aside li i {
     }
     .product {
         width: 100%;
-        margin: auto;
+        margin: 40px auto;
+        justify-content: center;
     }
     .product1 {
-        width: 190px;
-        height: 280px;
+        width: 180px;
+        height: 250px;
+        margin-bottom: 50px;
     }
     .productimg1 {
         width: 190px;
         height: 200px;
     }
     .product1 a i {
-        bottom: 80px;
-        right: 5px;
+        bottom: 50px;
+        right: 0px;
     }
     .product1 h2 {
         width: 190px;
@@ -617,10 +619,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product2 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product2 h2 {
         width: 190px;
         font-size: 14px;
@@ -633,10 +631,6 @@ aside li i {
     .productimg3 {
         width: 190px;
         height: 200px;
-    }
-    .product3 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product3 h2 {
         width: 190px;
@@ -651,10 +645,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product4 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product4 h2 {
         width: 190px;
         font-size: 12px;
@@ -667,10 +657,6 @@ aside li i {
     .productimg5 {
         width: 190px;
         height: 200px;
-    }
-    .product5 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product5 h2 {
         width: 190px;
@@ -685,10 +671,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product6 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product6 h2 {
         width: 190px;
         font-size: 12px;
@@ -701,10 +683,6 @@ aside li i {
     .productimg7 {
         width: 190px;
         height: 200px;
-    }
-    .product7 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product7 h2 {
         width: 190px;
@@ -719,10 +697,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product8 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product8 h2 {
         width: 190px;
         font-size: 12px;
@@ -735,10 +709,6 @@ aside li i {
     .productimg9 {
         width: 190px;
         height: 200px;
-    }
-    .product9 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product9 h2 {
         width: 190px;
@@ -753,10 +723,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product10 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product10 h2 {
         width: 190px;
         font-size: 12px;
@@ -770,10 +736,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product11 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product11 h2 {
         width: 190px;
         font-size: 12px;
@@ -786,10 +748,6 @@ aside li i {
     .productimg12 {
         width: 190px;
         height: 200px;
-    }
-    .product12 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product12 h2 {
         width: 190px;
@@ -867,6 +825,7 @@ aside li i {
     .product {
         width: 100%;
         margin: auto;
+        justify-content: center;
     }
     .product1 {
         width: 190px;
@@ -893,10 +852,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product2 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product2 h2 {
         width: 190px;
         font-size: 14px;
@@ -909,10 +864,6 @@ aside li i {
     .productimg3 {
         width: 190px;
         height: 200px;
-    }
-    .product3 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product3 h2 {
         width: 190px;
@@ -927,10 +878,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product4 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product4 h2 {
         width: 190px;
         font-size: 12px;
@@ -943,10 +890,6 @@ aside li i {
     .productimg5 {
         width: 190px;
         height: 200px;
-    }
-    .product5 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product5 h2 {
         width: 190px;
@@ -961,10 +904,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product6 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product6 h2 {
         width: 190px;
         font-size: 12px;
@@ -977,10 +916,6 @@ aside li i {
     .productimg7 {
         width: 190px;
         height: 200px;
-    }
-    .product7 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product7 h2 {
         width: 190px;
@@ -995,10 +930,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product8 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product8 h2 {
         width: 190px;
         font-size: 12px;
@@ -1011,10 +942,6 @@ aside li i {
     .productimg9 {
         width: 190px;
         height: 200px;
-    }
-    .product9 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product9 h2 {
         width: 190px;
@@ -1029,10 +956,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product10 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product10 h2 {
         width: 190px;
         font-size: 12px;
@@ -1046,10 +969,6 @@ aside li i {
         width: 190px;
         height: 200px;
     }
-    .product11 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product11 h2 {
         width: 190px;
         font-size: 12px;
@@ -1062,10 +981,6 @@ aside li i {
     .productimg12 {
         width: 190px;
         height: 200px;
-    }
-    .product12 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product12 h2 {
         width: 190px;
@@ -1127,6 +1042,7 @@ aside li i {
     }
     .product {
         width: 100%;
+        justify-content: center;
     }
     .product1 {
         width: 200px;
@@ -1153,10 +1069,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product2 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product2 h2 {
         width: 200px;
         font-size: 14px;
@@ -1169,10 +1081,6 @@ aside li i {
     .productimg3 {
         width: 200px;
         height: 200px;
-    }
-    .product3 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product3 h2 {
         width: 200px;
@@ -1187,10 +1095,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product4 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product4 h2 {
         width: 200px;
         font-size: 14px;
@@ -1203,10 +1107,6 @@ aside li i {
     .productimg5 {
         width: 200px;
         height: 200px;
-    }
-    .product5 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product5 h2 {
         width: 200px;
@@ -1221,10 +1121,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product6 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product6 h2 {
         width: 200px;
         font-size: 14px;
@@ -1237,10 +1133,6 @@ aside li i {
     .productimg7 {
         width: 200px;
         height: 200px;
-    }
-    .product7 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product7 h2 {
         width: 200px;
@@ -1255,10 +1147,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product8 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product8 h2 {
         width: 200px;
         font-size: 14px;
@@ -1271,10 +1159,6 @@ aside li i {
     .productimg9 {
         width: 200px;
         height: 200px;
-    }
-    .product9 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product9 h2 {
         width: 200px;
@@ -1289,10 +1173,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product10 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product10 h2 {
         width: 200px;
         font-size: 14px;
@@ -1306,10 +1186,6 @@ aside li i {
         width: 200px;
         height: 200px;
     }
-    .product11 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product11 h2 {
         width: 200px;
         font-size: 14px;
@@ -1322,10 +1198,6 @@ aside li i {
     .productimg12 {
         width: 200px;
         height: 200px;
-    }
-    .product12 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product12 h2 {
         width: 220px;
@@ -1383,6 +1255,7 @@ aside li i {
     }
     .product {
         width: 100%;
+        justify-content: center;
     }
     .product1 {
         width: 220px;
@@ -1409,10 +1282,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product2 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product2 h2 {
         width: 220px;
         font-size: 14px;
@@ -1425,10 +1294,6 @@ aside li i {
     .productimg3 {
         width: 220px;
         height: 200px;
-    }
-    .product3 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product3 h2 {
         width: 220px;
@@ -1443,10 +1308,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product4 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product4 h2 {
         width: 220px;
         font-size: 14px;
@@ -1459,10 +1320,6 @@ aside li i {
     .productimg5 {
         width: 220px;
         height: 200px;
-    }
-    .product5 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product5 h2 {
         width: 220px;
@@ -1477,10 +1334,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product6 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product6 h2 {
         width: 220px;
         font-size: 14px;
@@ -1493,10 +1346,6 @@ aside li i {
     .productimg7 {
         width: 220px;
         height: 200px;
-    }
-    .product7 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product7 h2 {
         width: 220px;
@@ -1511,10 +1360,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product8 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product8 h2 {
         width: 220px;
         font-size: 14px;
@@ -1527,10 +1372,6 @@ aside li i {
     .productimg9 {
         width: 220px;
         height: 200px;
-    }
-    .product9 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product9 h2 {
         width: 220px;
@@ -1545,10 +1386,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product10 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product10 h2 {
         width: 220px;
         font-size: 14px;
@@ -1562,10 +1399,6 @@ aside li i {
         width: 220px;
         height: 200px;
     }
-    .product11 a i {
-        bottom: 80px;
-        right: 5px;
-    }
     .product11 h2 {
         width: 220px;
         font-size: 14px;
@@ -1578,10 +1411,6 @@ aside li i {
     .productimg12 {
         width: 220px;
         height: 200px;
-    }
-    .product12 a i {
-        bottom: 80px;
-        right: 5px;
     }
     .product12 h2 {
         width: 220px;

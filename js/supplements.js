@@ -110,8 +110,6 @@ shopcarbtn.forEach((li) => {
     })
 })
 
-let deletei = document.querySelectorAll('.fa-trash-alt')
-console.log(deletei)
 shoppingcar.addEventListener('click', function(e) {
     if (e.target.className == 'fas fa-trash-alt') {
         let dproduct = e.target.parentElement.parentElement.children[0].textContent

@@ -203,45 +203,49 @@ main {
         height: 250px;
     }
     .title img {
-        width: 250px;
+        width: 100%;
         height: 200px;
         margin: 0 auto;
-        margin-left: 35px;
+        /* margin-left: 35px; */
     }
     .title h2 {
         font-size: 20px;
     }
+    .icon1 a i {
+        font-size: 20px;
+        margin: 20px 10px;
+    }
     main {
-        width: 450px;
+        width: 100%;
     }
     .txt1-date {
-        width: 145px;
+        width: 120px;
     }
     .txt1-class {
-        width: 145px;
+        width: 120px;
     }
     .txt1 {
-        width: 145px;
+        width: 120px;
         margin: 0 3px;
     }
     .txt:last-child {
         margin-right: 10px;
     }
     .full {
-        width: 120px;
+        width: 100px;
     }
     .resal {
-        width: 120px;
+        width: 100px;
     }
     .resk {
-        width: 120px;
+        width: 100px;
     }
     .res {
-        width: 120px;
+        width: 100px;
     }
     .foter {
         margin: 0 auto;
-        width: 360px;
+        width: 100%;
         flex-wrap: wrap;
     }
     .infor {
