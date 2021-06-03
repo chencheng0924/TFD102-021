@@ -1,13 +1,13 @@
 let list = document.querySelectorAll('.product1')
 document.addEventListener('scroll', () => {
-    if (scrollY > 200) {
+    // if (scrollY = 200) {
+    //     list[0].style.transform = 'translateX(0%)'
+    // }
+    if (scrollY > 600) {
         list[0].style.transform = 'translateX(0%)'
     }
-    if (scrollY > 600) {
-        list[1].style.transform = 'translateX(0%)'
-    }
     if (scrollY > 1000) {
-        list[2].style.transform = 'translateX(0%)'
+        list[1].style.transform = 'translateX(0%)'
     }
 })
 let list2 = document.querySelectorAll('.product2')

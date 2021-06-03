@@ -56,12 +56,21 @@ main {
     width: 1200px;
     height: 1700px;
     margin: 0 auto;
-    margin: 100px auto;
+    margin: 70px auto;
     background: #efedda;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 3px white;
     overflow: hidden;
+}
+
+.product3 {
+    width: 1200px;
+    padding-top: 40px;
+    margin-top: 40px;
+    display: flex;
+    /* transform: translateX(-100%); */
+    transition: all 1s;
 }
 
 .product1 {

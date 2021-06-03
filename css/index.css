@@ -7,9 +7,10 @@
     font-family: Arial, sans-serif;
 }
 
-html {
+
+/* html {
     overflow-x: hidden;
-}
+} */
 
 body {
     background: linear-gradient(180deg, #454444 50%, #e9d45d 50%);
@@ -214,6 +215,18 @@ body {
 
 /*                   導覽列                   */
 
+header {
+    width: 100%;
+}
+
+.backc {
+    max-width: 100%;
+}
+
+.all {
+    width: 100%;
+}
+
 .img img {
     width: 150px;
     height: 150px;
@@ -247,6 +260,7 @@ body {
 
 .navtxt {
     margin-top: 250px;
+    margin-left: 80px;
 }
 
 .navtxt h2 {
@@ -533,7 +547,7 @@ body {
 /*                    場館介紹                         */
 
 .studioall {
-    /* background:linear-gradient(0deg,rgb(194, 192, 192),rgb(238, 234, 234)); */
+    background: #252525;
     overflow: hidden;
 }
 
@@ -554,21 +568,741 @@ body {
     transform: translateX(-100%);
     transition: all .5s;
     opacity: 0;
+    width: 350px;
+    margin-left: 50px;
 }
 
 .studio21 {
     transform: translateX(0%);
     opacity: 1;
+    margin-right: 10px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .studio-img {
-    width: 650px;
+    width: 100%;
     /* height: 500px;   */
     display: flex;
     flex-wrap: wrap;
 }
 
+.gym1 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
+.gym2 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
+.gym3 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
+.gym4 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
+.gym5 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
+.gym6 {
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 30px 15px;
+}
+
 .gym1 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.gym2 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.gym3 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.gym4 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.gym5 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.gym6 img {
+    border: 1px solid white;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+
+/* gym1 border亮邊 */
+
+.p1 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    /* font-weight: 700; */
+    color: #e9d45d;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym1:hover .p1 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym1 span {
+    position: absolute;
+    display: block;
+}
+
+.gym1:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym1:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym1:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym1:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* gym2 border亮邊 */
+
+.p2 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #efedda;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym2:hover .p2 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym2 span {
+    position: absolute;
+    display: block;
+}
+
+.gym2:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym2:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym2:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym2:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* gym3 border亮邊 */
+
+.p3 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #e9d45d;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym3:hover .p3 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym3 span {
+    position: absolute;
+    display: block;
+}
+
+.gym3:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym3:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym3:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym3:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* gym4 border亮邊 */
+
+.p4 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #e9d45d;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym4:hover .p4 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym4 span {
+    position: absolute;
+    display: block;
+}
+
+.gym4:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym4:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym4:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym4:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* gym5 border亮邊 */
+
+.p5 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #efedda;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym5:hover .p5 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym5 span {
+    position: absolute;
+    display: block;
+}
+
+.gym5:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym5:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym5:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym5:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* gym6 border亮邊 */
+
+.p6 {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #e9d45d;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.gym6:hover .p6 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.gym6 span {
+    position: absolute;
+    display: block;
+}
+
+.gym6:hover .g1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #e9d45d);
+    animation: alternate1 1s linear 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.gym6:hover .g2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF9900);
+    animation: alternate2 1s linear 1;
+    animation-delay: .3s;
+}
+
+@keyframes alternate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.gym6:hover .g3 {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #FF9900);
+    animation: alternate3 1s linear 1;
+    animation-delay: .6s;
+}
+
+@keyframes alternate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.gym6:hover .g4 {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF9900);
+    animation: alternate4 1s linear 1;
+    animation-delay: .9s;
+}
+
+@keyframes alternate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* .gym1 img {
     border: 1px solid white;
     margin: 10px;
     width: 240px;
@@ -594,15 +1328,7 @@ body {
     margin: 10px;
     width: 270px;
     height: 250px;
-}
-
-.studio2 {
-    width: 300px;
-    margin: 0 100px 0 100px;
-    /* transform: translateX(2000px);
-    transition: all 1s;
-    opacity: 0; */
-}
+} */
 
 
 /* .studioall:hover .studio2{
@@ -632,10 +1358,28 @@ body {
 }
 
 .studio2 p {
-    margin: 55px 0;
+    margin: 20px 0;
     line-height: 30px;
     color: #e9d45d;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.studiobtn {
+    margin-top: 50px;
+    margin-left: 75px;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #e9d45d;
+    color: #454444;
+    transition: all 1s;
+}
+
+.studiobtn:hover {
+    cursor: pointer;
+    background-color: #454444;
+    color: #e9d45d;
+    box-shadow: 0 0 5px #e9d45d, 0 0 25px #e9d45d, 0 0 50px #e9d45d, 0 0 250px #e9d45d;
 }
 
 
@@ -675,6 +1419,19 @@ body {
 
 /*                  課程預約(翻牌)               */
 
+.container {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/index/ourclass2.jpg);
+    background-size: cover;
+}
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
 .classlist {
     width: 1200px;
     height: 100%;
@@ -682,9 +1439,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 150px;
-    /* margin-top: 50px; */
     border-radius: 3px;
-    background-color: #efedda;
     padding-top: 30px;
 }
 
@@ -695,7 +1450,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 3px;
-    background-color: #efedda;
+    /* background-color: #efedda; */
     padding-top: 30px;
 }
 
@@ -718,6 +1473,9 @@ body {
     background: #efedda;
     backface-visibility: hidden;
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .strcard1 p {
@@ -742,6 +1500,9 @@ body {
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .strcard2 h2 {
@@ -782,6 +1543,9 @@ body {
     backface-visibility: hidden;
     transform: rotateY(0deg);
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .yogacard1 p {
@@ -806,6 +1570,9 @@ body {
     backface-visibility: hidden;
     transform: rotateY(-180deg);
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .yogacard2 h2 {
@@ -841,6 +1608,9 @@ body {
     backface-visibility: hidden;
     transform: rotateY(0deg);
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .relaxcard:hover .relaxcard1 {
@@ -857,6 +1627,9 @@ body {
     backface-visibility: hidden;
     transform: rotateY(-180deg);
     transition: all 1s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(253, 248, 248, 0.25), 0 5px 5px rgba(241, 223, 223, 0.22);
 }
 
 .relaxcard:hover .relaxcard2 {
@@ -917,7 +1690,7 @@ body {
 
 .feedback {
     width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -1274,190 +2047,556 @@ footer p {
 /* RWD */
 
 @media screen and (max-width:575px) {
-    html {
-        overflow-x: hidden;
-    }
-    .icon a:nth-child(3) {
-        display: block;
-    }
-    .logo img {
-        width: 150px;
-        height: 150px;
-    }
-    .icon i {
-        color: #e9d45d;
-        font-size: 16px;
+    .header {
+        width: 100%;
     }
     body {
         background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
-        /* background-size: contain; */
     }
-    .nav .navlist {
-        display: none;
-    }
-    .nav {
-        width: 100%;
-    }
-    .navimg {
+    .all {
         max-width: 100%;
     }
-    .navimg video {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:767px) {
-    html {
-        overflow-x: hidden;
-    }
-    .icon a:nth-child(3) {
-        display: block;
-    }
-    .icon i {
-        color: #e9d45d;
-        font-size: 24px;
-    }
-    body {
-        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
-        /* background-size: contain; */
-    }
-    header {
-        width: 100%;
-    }
     .nav {
-        width: 100%;
+        width: 200px;
     }
-    .navlist {
+    .nav li {
         display: none;
     }
-    .navimg video {
-        width: 100%;
-        height: 100%;
-        margin-right: 30px;
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
     }
-    main {
-        width: 100%;
-        margin: 0 auto;
+    .nav .fa-bars {
+        display: block;
     }
-    .studioall {
-        width: 100%;
-        text-align: center;
+    .backgroundpic {
+        background-position-x: -360px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .navtxt {
+        margin-left: 40px;
+    }
+    .navtxt h2 {
+        font-size: 20px;
     }
     .studio {
-        padding: 0;
-        margin: 0 auto;
         width: 100%;
+        flex-direction: column;
+        padding-top: 30px;
     }
     .studio2 {
         width: 100%;
         margin: 0;
+        text-align: center;
     }
     .studio2 h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .studio2 p {
-        font-size: 14px;
+        font-size: 10px;
     }
-    .studio2 ul i {
-        font-size: 16px;
+    .studio2 button {
+        margin: 0;
+        padding: 5px 2px;
     }
-    .studio2 ul li {
-        font-size: 12px;
+    .gym1 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym2 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym3 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym4 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym5 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym6 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym1 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym2 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym3 img {
+        margin: 5px;
+        width: 190px;
+        height: 200px;
+    }
+    .gym4 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym5 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym6 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .p1 {
+        font-size: 6px;
+    }
+    .p2 {
+        font-size: 6px;
+    }
+    .p3 {
+        font-size: 6px;
+    }
+    .p4 {
+        font-size: 6px;
+    }
+    .p5 {
+        font-size: 6px;
+    }
+    .p6 {
+        font-size: 6px;
     }
     .studio-img {
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .studio-img img {
-        min-width: 250px;
-        min-height: 150px;
+    .container {
+        height: 480px;
     }
     .ourclass {
         width: 100%;
         padding: 0;
         height: 100px;
     }
-    .aa {
-        color: #efedda;
-    }
     .ourclass h2 {
-        padding: 0;
+        padding: 30px 0;
         margin: 0;
-        color: #efedda;
     }
     .ourclass p {
         display: none;
     }
     .classlist {
         width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         margin-bottom: 50px;
-        background: #efedda;
+    }
+    .strcard {
+        height: 250px;
+    }
+    .strcard1 p {
+        font-size: 16px;
+    }
+    .strcard1 img {
+        display: block;
+        width: 100%;
+        height: 200px;
     }
     .strcard2 h2 {
         font-size: 16px;
     }
     .strcard2 p {
-        font-size: 10px;
+        font-size: 6px;
+        line-height: 1.2;
+    }
+    .yogacard {
+        height: 250px;
+    }
+    .yogacard1 p {
+        font-size: 16px;
+    }
+    .yogacard1 img {
+        display: block;
+        width: 100%;
+        height: 200px;
     }
     .yogacard2 h2 {
         font-size: 16px;
     }
     .yogacard2 p {
-        font-size: 10px;
+        font-size: 6px;
+        line-height: 1.2;
+    }
+    .relaxcard {
+        height: 250px;
+    }
+    .relaxcard1 p {
+        font-size: 16px;
+    }
+    .relaxcard1 img {
+        display: block;
+        width: 100%;
+        height: 200px;
     }
     .relaxcard2 h2 {
         font-size: 16px;
     }
     .relaxcard2 p {
-        font-size: 10px;
+        font-size: 6px;
+        line-height: 1.2;
     }
     .gray {
         width: 100%;
         margin: 0;
-        background: transparent
+    }
+    .reser {
+        top: 0px;
     }
     .feedback {
         width: 100%;
+        padding-bottom: 0px;
     }
-    .feedback h2 {
-        font-size: 24px;
+    .feedbackitem {
+        width: 430px;
     }
-    .feedback p {
+    .feedbackitem p {
+        font-size: 12px;
+    }
+    .feedback-title p {
+        font-size: 14px;
+    }
+    .ts {
+        left: 0px;
+    }
+    .ts p {
         font-size: 16px;
     }
-    .feedback-txt h2 {
-        font-size: 20px;
+    .ce {
+        left: 0px;
     }
-    .feedback-txt p {
-        font-size: 16px;
+    .lb {
+        left: 0px;
+    }
+    .sc {
+        left: 0px;
     }
     section {
         width: 100%;
     }
-    .sup img {
-        width: 100%;
+    .content1 {
+        opacity: 1;
     }
-    .gear img {
-        width: 100%;
+    .content2 {
+        opacity: 1;
     }
     .foter {
+        margin: 0 auto;
         width: 100%;
-        height: 300px;
-        /* margin-top: 50px; */
+        flex-wrap: wrap;
+    }
+    .infor {
+        width: 120px;
+    }
+    .shop {
+        width: 120px;
+    }
+    .member {
+        width: 120px;
+    }
+    .contact {
+        width: 170px;
     }
     .foter h4 a {
         font-size: 16px;
     }
     .foter ul li a {
-        font-size: 8px;
+        font-size: 12px;
     }
     .conlist input {
-        width: 110px;
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+    .memlist1 a {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .header {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient(180deg, #454444 40%, #e9d45d 50%);
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav {
+        width: 200px;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav a i {
+        color: #e9d45d;
+        font-size: 18px;
+    }
+    .nav .fa-bars {
+        display: block;
+    }
+    .backgroundpic {
+        background-position-x: -360px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .navtxt {
+        margin-left: 40px;
+    }
+    .navtxt h2 {
+        font-size: 20px;
+    }
+    .studio {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .studio2 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .studio2 h2 {
+        font-size: 24px;
+    }
+    .studio2 p {
+        font-size: 10px;
+    }
+    .studio2 button {
+        margin: 0;
+        padding: 5px 2px;
+    }
+    .gym1 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym2 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym3 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym4 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym5 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym6 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym1 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym2 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym3 img {
+        margin: 5px;
+        width: 190px;
+        height: 200px;
+    }
+    .gym4 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym5 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym6 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .p1 {
+        font-size: 6px;
+    }
+    .p2 {
+        font-size: 6px;
+    }
+    .p3 {
+        font-size: 6px;
+    }
+    .p4 {
+        font-size: 6px;
+    }
+    .p5 {
+        font-size: 6px;
+    }
+    .p6 {
+        font-size: 6px;
+    }
+    .studio-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        height: 480px;
+    }
+    .ourclass {
+        width: 100%;
+        padding: 0;
+        height: 100px;
+    }
+    .ourclass h2 {
+        padding: 30px 0;
+        margin: 0;
+    }
+    .ourclass p {
+        display: none;
+    }
+    .classlist {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .strcard {
+        height: 250px;
+    }
+    .strcard1 img {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .strcard2 h2 {
+        font-size: 16px;
+    }
+    .strcard2 p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+    .yogacard {
+        height: 250px;
+    }
+    .yogacard1 img {
+        display: block;
+        width: 100%;
+        height: 192px;
+    }
+    .yogacard2 h2 {
+        font-size: 16px;
+    }
+    .yogacard2 p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+    .relaxcard {
+        height: 250px;
+    }
+    .relaxcard1 img {
+        display: block;
+        width: 100%;
+        height: 192px;
+    }
+    .relaxcard2 h2 {
+        font-size: 16px;
+    }
+    .relaxcard2 p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+    .gray {
+        width: 100%;
+        margin: 0;
+    }
+    .reser {
+        top: 0px;
+    }
+    .feedback {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .feedbackitem {
+        width: 430px;
+    }
+    .feedbackitem p {
+        font-size: 12px;
+    }
+    .ts {
+        left: 0px;
+    }
+    .ts p {
+        font-size: 16px;
+    }
+    .ce {
+        left: 0px;
+    }
+    .lb {
+        left: 0px;
+    }
+    .sc {
+        left: 0px;
+    }
+    section {
+        width: 100%;
+    }
+    .content1 {
+        opacity: 1;
+    }
+    .content2 {
+        opacity: 1;
+    }
+    .foter h4 a {
+        font-size: 16px;
+    }
+    .foter ul li a {
+        font-size: 12px;
+    }
+    .conlist input {
+        width: 120px;
         height: 20px;
     }
     .last p {
@@ -1465,228 +2604,135 @@ footer p {
     }
 }
 
-@media screen and (min-width:576px) and (max-width:767px) {
-    .icon a:nth-child(3) {
-        display: block;
-    }
+@media screen and (min-width:768px) and (max-width:991px) {
     header {
         width: 100%;
     }
-    .nav {
-        width: 100%;
+    .backgroundpic {
+        background-position-x: -350px;
+    }
+    .all {
+        max-width: 100%;
     }
     .nav li a {
-        font-size: 22px;
+        font-size: 18px;
+        padding: 0 10px;
     }
     .navlist11 li a {
-        font-size: 18px;
-    }
-    .navimg video {
-        width: 100%;
-        height: 100%;
-        margin-right: 30px;
-    }
-    .studio2 {
-        width: 100%;
-    }
-    .studio2 h2 {
-        font-size: 20px;
-    }
-    .studio2 p {
         font-size: 14px;
     }
-    .studio2 ul i {
-        font-size: 16px;
+    .navlist22 li a {
+        font-size: 14px;
     }
-    .studio2 ul li {
-        font-size: 12px;
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
     }
-    .studio-img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .studio-img img {
-        width: 250px;
-        height: 150px;
-    }
-    .ourclass {
-        width: 100%;
-        padding: 0;
-        height: 100px;
-    }
-    .ourclass h2 {
-        padding: 0;
-        margin: 0;
-    }
-    .ourclass p {
-        display: none;
-    }
-    .classlist {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 50px;
-        /* background-image: url(../img/newbanner.jpg);
-        background-size: cover; */
-    }
-    .gray {
-        width: 100%;
-        margin: 0;
-    }
-    .feedback {
-        width: 100%;
-    }
-    section {
-        width: 100%;
-    }
-    .foter {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:991px) {
-    .icon a:nth-child(3) {
-        display: block;
-    }
-    header {
-        width: 100%;
-    }
-    .nav {
-        width: 100%;
-    }
-    .nav li a {
-        font-size: 22px;
-    }
-    .navlist11 li a {
-        font-size: 18px;
-    }
-    .navimg video {
-        width: 100%;
-        height: 100%;
-        margin-right: 30px;
+    .navtxt h2 {
+        font-size: 24px;
     }
     .studio {
         width: 100%;
     }
     .studio2 {
-        width: 100%;
-    }
-    .studio2 h2 {
-        font-size: 32px;
-    }
-    .studio2 p {
-        font-size: 26px;
-    }
-    .studio-img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    /* .studio-img .gym1 {
-        width: 300px;
-        height: 150px;
-    }
-    .studio-img .gym2 {
-        width: 300px;
-        height: 150px;
-    }
-    .studio-img .gym3 {
-        width: 300px;
-        height: 150px;
-    }
-    .studio-img .gym4 {
-        width: 300px;
-        height: 150px;
-    } */
-    .studio-img img {
-        width: 300px;
-        height: 200px;
-    }
-    .ourclass {
-        width: 100%;
-        padding: 0;
-        height: 100px;
-    }
-    .ourclass h2 {
-        padding: 0;
-        margin: 0;
-    }
-    .ourclass p {
-        display: none;
-    }
-    .classlist {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 50px;
-        /* background-image: url(../img/newbanner.jpg);
-        background-size: cover; */
-    }
-    .gray {
-        width: 100%;
-        margin: 0;
-    }
-    .feedback {
-        width: 100%;
-    }
-    .feedbackitem {
-        width: 350px;
-    }
-    section {
-        width: 100%;
-    }
-    .foter {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:992px) and (max-width:1230px) {
-    header {
-        width: 100%;
-    }
-    .nav {
-        width: 100%;
-    }
-    .nav li a {
-        font-size: 22px;
-    }
-    .navlist11 li a {
-        font-size: 18px;
-    }
-    .navimg video {
-        width: 100%;
-        height: 100%;
-        margin-right: 30px;
-    }
-    .studio {
-        width: 100%;
-    }
-    .studio2 {
-        width: 100%;
+        width: 35%;
+        margin-left: 30px;
     }
     .studio2 h2 {
         font-size: 36px;
     }
     .studio2 p {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .studio2 button {
+        margin-left: 40px;
+    }
+    .gym1 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym2 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym3 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym4 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym5 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym6 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px;
+    }
+    .gym1 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym2 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym3 img {
+        margin: 5px;
+        width: 190px;
+        height: 200px;
+    }
+    .gym4 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym5 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .gym6 img {
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+    }
+    .p1 {
+        font-size: 6px;
+    }
+    .p2 {
+        font-size: 6px;
+    }
+    .p3 {
+        font-size: 6px;
+    }
+    .p4 {
+        font-size: 6px;
+    }
+    .p5 {
+        font-size: 6px;
+    }
+    .p6 {
+        font-size: 6px;
     }
     .studio-img {
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .studio-img img {
-        width: 300px;
-        height: 200px;
+    .container {
+        height: 550px;
     }
     .ourclass {
         width: 100%;
@@ -1694,7 +2740,144 @@ footer p {
         height: 100px;
     }
     .ourclass h2 {
+        padding: 30px 0;
+        margin: 0;
+    }
+    .ourclass p {
+        display: none;
+    }
+    .classlist {
+        width: 100%;
+        height: 100%;
+        margin: 0;
         padding: 0;
+        margin-bottom: 50px;
+        /* background-image: url(../img/newbanner.jpg);
+        background-size: cover; */
+    }
+    .strcard {
+        height: 350px;
+    }
+    .yogacard {
+        height: 350px;
+    }
+    .relaxcard {
+        height: 350px;
+    }
+    .gray {
+        width: 100%;
+        margin: 0;
+    }
+    .reser {
+        top: 20px;
+    }
+    .feedback {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .feedbackitem {
+        width: 430px;
+    }
+    .feedbackitem p {
+        font-size: 12px;
+    }
+    .ts {
+        left: 0px;
+    }
+    .ts p {
+        font-size: 16px;
+    }
+    .ce {
+        left: 0px;
+    }
+    .lb {
+        left: 0px;
+    }
+    .sc {
+        left: 0px;
+    }
+    section {
+        width: 100%;
+    }
+    .content1 {
+        opacity: 1;
+    }
+    .content2 {
+        opacity: 1;
+    }
+    .foter h4 a {
+        font-size: 18px;
+    }
+    .foter ul li a {
+        font-size: 14px;
+    }
+    .conlist input {
+        width: 120px;
+        height: 20px;
+    }
+    .last p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header {
+        width: 100%;
+    }
+    .backgroundpic {
+        background-position-x: -200px;
+    }
+    .all {
+        max-width: 100%;
+    }
+    .nav li a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .navlist11 li a {
+        font-size: 14px;
+    }
+    .navlist22 li a {
+        font-size: 14px;
+    }
+    .nav a i {
+        padding: 20px;
+        font-size: 24px;
+    }
+    .navtxt h2 {
+        font-size: 28px;
+    }
+    .studio {
+        width: 100%;
+    }
+    .studio2 {
+        width: 35%;
+    }
+    .studio2 h2 {
+        font-size: 36px;
+    }
+    .studio2 p {
+        font-size: 16px;
+    }
+    .studio2 button {
+        margin-left: 50px;
+    }
+    .studio-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        height: 600px;
+    }
+    .ourclass {
+        width: 100%;
+        padding: 0;
+        height: 100px;
+    }
+    .ourclass h2 {
+        padding: 30px 0;
         margin: 0;
     }
     .ourclass p {
@@ -1713,17 +2896,55 @@ footer p {
         width: 100%;
         margin: 0;
     }
+    .reser {
+        top: 80px;
+    }
     .feedback {
         width: 100%;
+        padding-bottom: 0px;
     }
     .feedbackitem {
-        width: 450px;
+        width: 430px;
+    }
+    .feedbackitem p {
+        font-size: 12px;
+    }
+    .ts {
+        left: 0px;
+    }
+    .ts p {
+        font-size: 16px;
+    }
+    .ce {
+        left: 0px;
+    }
+    .lb {
+        left: 0px;
+    }
+    .sc {
+        left: 0px;
     }
     section {
         width: 100%;
     }
-    .foter {
-        width: 100%;
+    .content1 {
+        opacity: 1;
+    }
+    .content2 {
+        opacity: 1;
+    }
+    .foter h4 a {
+        font-size: 20px;
+    }
+    .foter ul li a {
+        font-size: 16px;
+    }
+    .conlist input {
+        width: 150px;
+        height: 30px;
+    }
+    .last p {
+        font-size: 12px;
     }
 }
 
