@@ -49,15 +49,55 @@ function signinmove() {
 }
 signinbtn.addEventListener('click', signinmove)
 
+// // 漢堡導覽列
+// let hambarback = document.querySelector('.hambarback')
+// let hambar = document.querySelector('.hambar')
+// let hambarmove = document.querySelector('.fa-bars')
+// hambarmove.addEventListener('click', function() {
+//     hambar.classList.add('hambarnavmove')
+//     hambar.style.display = 'block'
+// })
+// hambarback.addEventListener('click', function() {
+//     // hambar.classList.add('hambarnavback')
+//     hambar.style.display = 'none'
+// })
 // 漢堡導覽列
-let hambarback = document.querySelector('.hambarback')
-let hambar = document.querySelector('.hambar')
-let hambarmove = document.querySelector('.fa-bars')
-hambarmove.addEventListener('click', function() {
-    hambar.classList.add('hambarnavmove')
-    hambar.style.display = 'block'
+let newnavmove = document.querySelector('.fa-bars')
+let newnavback = document.querySelector('.newnavback')
+let navbar1 = document.querySelector('.navbar1')
+let newnav = document.querySelector('.newnav')
+
+newnavmove.addEventListener('click', function() {
+    navbar1.style.transform = 'scale(35)'
+    navbar1.style.zIndex = '2'
+    navbar1.style.opacity = '1'
+    newnav.style.zIndex = '3'
+    newnavback.style.zIndex = '3'
+
+    setTimeout(function() {
+        newnavback.style.opacity = '1'
+        newnav.style.opacity = '1'
+    }, 1000)
+
 })
-hambarback.addEventListener('click', function() {
-    // hambar.classList.add('hambarnavback')
-    hambar.style.display = 'none'
+newnavback.addEventListener('click', function() {
+    navbar1.style.transform = 'scale(0)'
+    newnavback.style.opacity = '0'
+    newnav.style.opacity = '0'
+    setTimeout(function() {
+        newnavback.style.zIndex = '-2'
+        newnav.style.zIndex = '-2'
+    }, 100)
+
+})
+document.addEventListener('scroll', function() {
+    if (scrollY > 0) {
+        navbar1.style.transform = 'scale(0)'
+        newnavback.style.opacity = '0'
+        newnav.style.opacity = '0'
+        setTimeout(function() {
+            newnavback.style.zIndex = '-2'
+            newnav.style.zIndex = '-2'
+        }, 1000)
+    }
 })

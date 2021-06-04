@@ -7,10 +7,9 @@
     font-family: Arial, sans-serif;
 }
 
-
-/* html {
+html {
     overflow-x: hidden;
-} */
+}
 
 body {
     background: linear-gradient(180deg, #454444 50%, #e9d45d 50%);
@@ -306,6 +305,189 @@ header {
     }
 }
 
+.navbar {
+    position: relative;
+}
+
+.fa-bars {
+    z-index: 2;
+}
+
+.navbar1 {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 65px;
+    height: 65px;
+    background: #e9d45d;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.newnavback {
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    z-index: -2;
+    transition: all .5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.newnavback i {
+    color: #454444;
+}
+
+.newnav {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: -2;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.newnav1 li {
+    font-size: 24px;
+    margin: 50px 0;
+}
+
+.newnav1 li i {
+    padding-right: 20px;
+}
+
+.newnav1 li a {
+    color: #454444;
+    text-decoration: none;
+    transform: scale(1);
+}
+
+.newnav11 {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.newnav11:hover {
+    transform: scale(1.2);
+}
+
+.newnav11:hover span {
+    transform: translateX(100%);
+}
+
+.newnav11 span {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #252525);
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
+.newnav12 {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.newnav12:hover {
+    transform: scale(1.2);
+}
+
+.newnav12:hover span {
+    transform: translateX(100%);
+}
+
+.newnav12 span {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #252525);
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
+.newnav13 {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.newnav13:hover {
+    transform: scale(1.2);
+}
+
+.newnav13:hover span {
+    transform: translateX(100%);
+}
+
+.newnav13 span {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #252525);
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
+.newnav14 {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.newnav14:hover {
+    transform: scale(1.2);
+}
+
+.newnav14:hover span {
+    transform: translateX(100%);
+}
+
+.newnav14 span {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #252525);
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
+.newnav15 {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.newnav15:hover {
+    transform: scale(1.2);
+}
+
+.newnav15:hover span {
+    transform: translateX(100%);
+}
+
+.newnav15 span {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #252525);
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
 
 /* .logo {
     display: flex;
@@ -350,7 +532,8 @@ header {
     display: none;
 } */
 
-.hambarback {
+
+/* .hambarback {
     font-size: 24px;
     color: #454444;
     margin: 10px;
@@ -383,9 +566,10 @@ header {
     100% {
         opacity: 0;
     }
-}
+} */
 
-.hambartxt {
+
+/* .hambartxt {
     width: 100%;
     height: 100%;
     display: flex;
@@ -428,6 +612,29 @@ header {
     color: #454444;
     font-size: 20px;
 }
+
+.hambarul1 li {
+    margin: 30px;
+    transition: all 1s;
+}
+
+.hambarul1 li i {
+    font-size: 28px;
+    margin-right: 15px;
+    display: none;
+     opacity: 0; 
+
+
+}
+.hambarul1 li a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #454444;
+}
+.hambarul15 li:hover .hambarul1 li i {
+    display: block;
+}
+*/
 
 
 /* .nav a {
@@ -2082,6 +2289,14 @@ footer p {
     .navtxt h2 {
         font-size: 20px;
     }
+    .newnav {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        z-index: -2;
+        opacity: 0;
+        transition: all .5s;
+    }
     .studio {
         width: 100%;
         flex-direction: column;
@@ -2354,7 +2569,7 @@ footer p {
     .nav {
         width: 200px;
     }
-    .nav li {
+    .nav>li {
         display: none;
     }
     .nav a i {
