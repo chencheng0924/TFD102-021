@@ -166,6 +166,7 @@ newnavback.addEventListener('click', function() {
         newnavback.style.zIndex = '-2'
         newnav.style.zIndex = '-2'
     }, 100)
+    newnav1.classList.remove('active')
 
 })
 document.addEventListener('scroll', function() {
