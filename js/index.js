@@ -141,8 +141,9 @@ let newnavmove = document.querySelector('.fa-bars')
 let newnavback = document.querySelector('.newnavback')
 let navbar1 = document.querySelector('.navbar1')
 let newnav = document.querySelector('.newnav')
-
+let newnav1 = document.querySelector('.newnav1')
 newnavmove.addEventListener('click', function() {
+    newnav1.classList.add('active')
     navbar1.style.transform = 'scale(35)'
     navbar1.style.zIndex = '2'
     navbar1.style.opacity = '1'
@@ -150,12 +151,13 @@ newnavmove.addEventListener('click', function() {
     newnav.style.zIndex = '3'
     newnavback.style.zIndex = '3'
 
-    setTimeout(function() {
-        newnavback.style.opacity = '1'
-        newnav.style.opacity = '1'
-    }, 1000)
+    // setTimeout(function() {
+    newnavback.style.opacity = '1'
+    newnav.style.opacity = '1'
+        // }, 1000)
 
 })
+
 newnavback.addEventListener('click', function() {
     navbar1.style.transform = 'scale(0)'
     newnavback.style.opacity = '0'
@@ -176,4 +178,18 @@ document.addEventListener('scroll', function() {
             newnav.style.zIndex = '-2'
         }, 1000)
     }
+})
+
+// loading動畫
+let wavyall = document.querySelector('.wavyall')
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        wavyall.style.opacity = '0'
+        wavyall.style.visibility = 'hidden'
+    }, 2000)
+    setTimeout(function() {
+        wavyall.style.zIndex = '-100'
+    }, 3000)
+
+
 })
