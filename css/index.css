@@ -211,6 +211,190 @@ body {
     }
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 第二顆漢堡導覽 */
+
+.nav .fa-user {
+    display: none;
+}
+
+.bigloginform {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.loginlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform {
+    width: 400px;
+    height: 100vh;
+    position: relative;
+}
+
+.loginformtxt {
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+    margin: 80px auto;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #cbced1, -8px -8px 10px #ffffff;
+}
+
+.bigloginformicon {
+    list-style: none;
+    display: flex;
+}
+
+.bigloginformicon li i {
+    font-size: 36px;
+    color: #454444;
+    border: 3px solid #e9d45d;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.loginarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginlogo img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.loginlogo h2 {
+    color: #454444;
+    margin-bottom: 10px;
+}
+
+.loginlogo p {
+    margin-bottom: 10px;
+}
+
+.wrong2 {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.wrong2:hover {
+    cursor: pointer;
+}
+
+.username {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.username1 {
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.username input {
+    padding: 15px 8px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.username button {
+    padding: 15px 8px;
+    border: none;
+    background: transparent;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.password1 {
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.password input {
+    padding: 15px 8px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.password button {
+    padding: 15px 8px;
+    border: none;
+    background: transparent;
+}
+
+.loginbtn {
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background: #454444;
+    color: #ffff;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.forget {
+    display: flex;
+    align-self: flex-end;
+    font-size: 12px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.forget a {
+    text-decoration: none;
+    color: #454444;
+}
+
+.loginform2 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
 
 /*                   導覽列                   */
 
@@ -237,7 +421,7 @@ header {
 
 .backgroundpic {
     width: 100%;
-    height: 750px;
+    height: 800px;
     background-image: url(../img/index/2navbackground.jpg);
     background-size: cover;
 }
@@ -259,7 +443,7 @@ header {
 
 .navtxt {
     margin-top: 250px;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .navtxt h2 {
@@ -2554,6 +2738,12 @@ footer p {
     .memlist1 a {
         width: 50px;
     }
+    .nav .fa-user {
+        display: block;
+    }
+    .nav .fa-user-circle {
+        display: none;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -2817,6 +3007,12 @@ footer p {
     .last p {
         font-size: 10px;
     }
+    .nav .fa-user {
+        display: block;
+    }
+    .nav .fa-user-circle {
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -3033,6 +3229,12 @@ footer p {
     .last p {
         font-size: 10px;
     }
+    .nav .fa-user {
+        display: block;
+    }
+    .nav .fa-user-circle {
+        display: none;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
@@ -3160,6 +3362,12 @@ footer p {
     }
     .last p {
         font-size: 12px;
+    }
+    .nav .fa-user {
+        display: block;
+    }
+    .nav .fa-user-circle {
+        display: none;
     }
 }
 

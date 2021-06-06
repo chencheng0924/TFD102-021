@@ -50,7 +50,45 @@ function signinmove() {
 }
 signinbtn.addEventListener('click', signinmove)
 
+let nav2bar = document.querySelector('.nav .fa-user')
+let nav2barclose = document.querySelector('.wrong2')
+let nav2 = document.querySelector('.bigloginform')
+nav2bar.addEventListener('click', function() {
+    nav2.style.display = 'flex'
+})
+nav2barclose.addEventListener('click', function() {
+    nav2.style.display = 'none'
+})
+document.addEventListener('scroll', function() {
+        if (scrollY > 0) {
+            nav2.style.display = 'none'
+        }
+    })
+    // 第二顆漢堡導覽列
+let signup1 = document.querySelector('.s1 a')
+let signin1 = document.querySelector('.s2 a')
+let loginformtxt = document.querySelector('.loginformtxt')
+let loginform2 = document.querySelector('.loginform2')
+console.log(signup1)
+console.log(signin1)
 
+signup1.addEventListener('click', function() {
+    loginformtxt.style.opacity = '0'
+    loginformtxt.style.zIndex = '-1'
+    setTimeout(function() {
+        loginform2.style.opacity = '1'
+        loginform2.style.zIndex = '1'
+    }, 500)
+
+})
+signin1.addEventListener('click', function() {
+    loginform2.style.opacity = '0'
+    loginform2.style.zIndex = '-1'
+    setTimeout(function() {
+        loginformtxt.style.opacity = '1'
+        loginformtxt.style.zIndex = '1'
+    }, 500)
+})
 
 
 // 場館照片滑入
