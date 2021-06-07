@@ -926,7 +926,7 @@ footer p {
 @media screen and (max-width:575px) {
     .newnav {
         position: absolute;
-        top: 20%;
+        top: 3%;
         left: 30%;
         z-index: -2;
         opacity: 0;
