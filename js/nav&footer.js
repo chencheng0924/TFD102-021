@@ -68,7 +68,7 @@ let navbar1 = document.querySelector('.navbar1')
 let newnav = document.querySelector('.newnav')
 
 newnavmove.addEventListener('click', function() {
-    navbar1.style.transform = 'scale(35)'
+    navbar1.style.transform = 'scale(50)'
     navbar1.style.zIndex = '2'
     navbar1.style.opacity = '1'
     newnav.style.zIndex = '3'

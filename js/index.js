@@ -144,7 +144,7 @@ let newnav = document.querySelector('.newnav')
 let newnav1 = document.querySelector('.newnav1')
 newnavmove.addEventListener('click', function() {
     newnav1.classList.add('active')
-    navbar1.style.transform = 'scale(35)'
+    navbar1.style.transform = 'scale(50)'
     navbar1.style.zIndex = '2'
     navbar1.style.opacity = '1'
 
