@@ -331,7 +331,7 @@ aside button:hover {
     }
     .nav a i {
         color: #e9d45d;
-        font-size: 18px;
+        font-size: 24px;
     }
     .nav .fa-bars {
         display: block;
@@ -384,7 +384,7 @@ aside button:hover {
         flex-direction: column;
     }
     .content img {
-        width: 150px;
+        width: 100px;
         height: 100px;
     }
     .txt {
@@ -399,7 +399,7 @@ aside button:hover {
         margin: 20px 5px;
     }
     .txt p {
-        font-size: 14px;
+        font-size: 6px;
         margin: 20px 5px;
     }
     .last {
