@@ -95,6 +95,13 @@ shopcarbtn.forEach((li) => {
         })
         console.log(str)
         car.innerHTML = str
+        let shop = JSON.parse(localStorage.getItem("shop"));
+        if (shop) { // 若存在
+            shop.push(shop);
+        } else { // 若不存在
+            shop = [shop];
+        }
+        // localStorage.setItem('shop', JSON.stringify(shoppcar))
 
         let total = 0
         let str2 = ''
@@ -104,6 +111,7 @@ shopcarbtn.forEach((li) => {
             str2 = `<div>Total:NT$${total}<div>`
         })
         supcheck1.innerHTML = str2
+            // localStorage.setItem('total', JSON.stringify(shoppcar))
 
         shoppingcar.style.transform = 'transXlate(0%)'
         shoppingcar.style.display = 'block'
@@ -111,20 +119,20 @@ shopcarbtn.forEach((li) => {
 })
 
 shoppingcar.addEventListener('click', function(e) {
-    if (e.target.className == 'fas fa-trash-alt') {
-        let dproduct = e.target.parentElement.parentElement.children[0].textContent
-        console.log(dproduct)
-        shoppcar.forEach((x) => {
-            if (dproduct == x.newh2) {
-                let index1 = shoppcar.findIndex((u) => {
-                    return u.newh2 == dproduct
-                })
-                shoppcar.splice(index1, 1)
-                console.log(shoppcar)
-                console.log(index1)
-                let str3 = ''
-                shoppcar.forEach((g) => {
-                    str3 += `<div class="supercar">
+        if (e.target.className == 'fas fa-trash-alt') {
+            let dproduct = e.target.parentElement.parentElement.children[0].textContent
+            console.log(dproduct)
+            shoppcar.forEach((x) => {
+                if (dproduct == x.newh2) {
+                    let index1 = shoppcar.findIndex((u) => {
+                        return u.newh2 == dproduct
+                    })
+                    shoppcar.splice(index1, 1)
+                    console.log(shoppcar)
+                    console.log(index1)
+                    let str3 = ''
+                    shoppcar.forEach((g) => {
+                        str3 += `<div class="supercar">
                             <div><img src="${g.newimage}"></div> 
                             <div><h2>${g.newh2}</h2> 
                             <div class="superprice">
@@ -134,23 +142,56 @@ shoppingcar.addEventListener('click', function(e) {
                             <i class="fas fa-trash-alt"></i></div>
                             </div>  
                             </div>`
-                })
-                console.log(str3)
-                car.innerHTML = str3
-            }
-        })
-        let str4 = ''
-        let total123 = 0
-        shoppcar.forEach((g) => {
-            total123 += g.newprice
-            console.log(total123)
-            str4 = `<div>Total:NT$${total123}<div>`
-        })
-        console.log(shoppcar)
-        supcheck1.innerHTML = str4
-    }
-})
+                    })
+                    console.log(str3)
+                    car.innerHTML = str3
+                }
+            })
+            let str4 = ''
+            let total123 = 0
+            shoppcar.forEach((g) => {
+                total123 += g.newprice
+                console.log(total123)
+                str4 = `<div>Total:NT$${total123}<div>`
+            })
+            console.log(shoppcar)
+            supcheck1.innerHTML = str4
+        }
+    })
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     let shop = JSON.parse(localStorage.getItem('shop'))
+    //     console.log(shop)
+    //     if (shop) {
+    //         // console.log('hi')
+    //         let str = ''
+    //         shop.forEach((x) => {
+    //             str += `<div class="supercar">
+    //             <div><img src="${x.newimage}"></div> 
+    //             <div><h2>${x.newh2}</h2> 
+    //             <div class="superprice">
+    //             <p>${x.newnum}</p>
+    //             <p>X</p>
+    //             <p>NT$${x.newprice}</p>
+    //             <i class="fas fa-trash-alt"></i></div>
+    //             </div>  
+    //             </div>`
+    //         })
+    //         car.innerHTML = str
 
+//         let total = 0
+//         let str2 = ''
+//         shoppcar.forEach((q) => {
+//             total += q.newprice
+//                 // console.log(total)
+//             str2 = `<div>Total:NT$${total}<div>`
+//         })
+//         supcheck1.innerHTML = str2
+//     }
+//     // localStorage.setItem('shop', JSON.stringify(shop))
+
+//     shoppingcar.style.transform = 'transXlate(0%)'
+//     shoppingcar.style.display = 'block'
+// })
 
 // 購物車
 let shopcar = document.querySelector('.shoppingcar')
