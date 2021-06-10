@@ -191,6 +191,4 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         wavyall.style.zIndex = '-100'
     }, 3000)
-
-
 })
